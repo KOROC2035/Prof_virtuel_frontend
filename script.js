@@ -1163,7 +1163,7 @@ async function processAiRequest(fileToProcess, textQuery, targetChannelId) {
             const formData = new FormData();
             formData.append("file", fileToProcess);
 
-            const uploadRes = await fetch("http://127.0.0.1:8000/api/upload", {
+            const uploadRes = await fetch("https://prof-virtuel-backend.onrender.com/api/upload", {
                 method: "POST",
                 headers: { "Authorization": `Bearer ${token}` },
                 body: formData
@@ -1215,7 +1215,7 @@ async function processAiRequest(fileToProcess, textQuery, targetChannelId) {
         const contextData = krakiBuildContext(finalQuestion);
         const enrichedPrompt = contextData ? KRAKI_SYSTEM_GENIE + contextData + "\n\nRequête de l'élève: " + finalQuestion : finalQuestion;
 
-        const res = await fetch("http://127.0.0.1:8000/api/explain", {
+        const res = await fetch("https://prof-virtuel-backend.onrender.com/api/explain", {
             method: "POST",
             headers: { "Content-Type": "application/json", "Authorization": `Bearer ${token}` },
             body: JSON.stringify({ 
