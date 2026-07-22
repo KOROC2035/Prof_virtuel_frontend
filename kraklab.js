@@ -68,6 +68,7 @@ const R={
 const ACIDS=['hcl','h2so4','hno3','vinaigre'], BASES=['naoh','koh','nh3','chaux'];
 const SULFATES=['cuso4','feso4','niso4','znso4','mgso4','h2so4'];
 const CHLORURES=['nacl','bacl2','cacl2','cocl2','fecl3'];
+
 function bottleSVG(col){const id="b"+Math.random().toString(36).slice(2,7);return `
 <svg width="36" height="48" viewBox="0 0 38 50">
  <rect x="13" y="2" width="12" height="7" rx="2" fill="#cfd9de"/>
@@ -75,20 +76,40 @@ function bottleSVG(col){const id="b"+Math.random().toString(36).slice(2,7);retur
  <clipPath id="${id}"><path d="M11 9 h16 v6 l5 9 v22 a4 4 0 0 1 -4 4 h-18 a4 4 0 0 1 -4 -4 v-22 l5 -9 z"/></clipPath>
  <rect x="6" y="29" width="26" height="23" fill="${col}" opacity=".9" clip-path="url(#${id})"/>
  <rect x="13" y="11" width="3" height="33" rx="1.5" fill="#fff" opacity=".45"/></svg>`;}
+
 const shelf=document.getElementById('shelf'),catbar=document.getElementById('catbar'),selName=document.getElementById('selName');
 let selected=null;
 const CATS=['Tous','Acides','Bases','Sels','Oxydo-réduction','Indicateurs','Organique'];
 let curCat='Tous';
-CATS.forEach(cat=>{const b=document.createElement('button');b.className='catchip'+(cat==='Tous'?' on':'');b.textContent=cat;
-  b.onclick=()=>{sfx.click();curCat=cat;document.querySelectorAll('.catchip').forEach(x=>x.classList.toggle('on',x.textContent===cat));renderShelf();};catbar.appendChild(b);});
-function renderShelf(){shelf.innerHTML='';
-  for(const k in R){if(curCat!=='Tous'&&R[k].g!==curCat)continue;
-    const el=document.createElement('div');el.className='reagent'+(selected===k?' sel':'');el.dataset.key=k;
-    el.innerHTML=bottleSVG(R[k].c)+`<small><b>${R[k].n}</b><br>${R[k].f}</small>`;
-    el.addEventListener('pointerdown',e=>{sfx.click();selectReagent(k);});
-    shelf.appendChild(el);}}
-function selectReagent(k){selected=k;selName.textContent='✔ '+R[k].n+' ('+R[k].f+')';
-  document.querySelectorAll('.reagent').forEach(x=>x.classList.toggle('sel',x.dataset.key===k));}
+CATS.forEach(cat=>{
+    const b=document.createElement('button');
+    b.className='catchip'+(cat==='Tous'?' on':'');
+    b.textContent=cat;
+    b.onclick=()=>{
+        sfx.click();curCat=cat;
+        document.querySelectorAll('.catchip').forEach(x=>x.classList.toggle('on',x.textContent===cat));
+        renderShelf();
+    };
+    catbar.appendChild(b);
+});
+
+function renderShelf(){
+    shelf.innerHTML='';
+    for(const k in R){
+        if(curCat!=='Tous'&&R[k].g!==curCat)continue;
+        const el=document.createElement('div');
+        el.className='reagent'+(selected===k?' sel':'');
+        el.dataset.key=k;
+        el.innerHTML=bottleSVG(R[k].c)+`<small><b>${R[k].n}</b><br>${R[k].f}</small>`;
+        el.addEventListener('pointerdown',e=>{sfx.click();selectReagent(k);});
+        shelf.appendChild(el);
+    }
+}
+
+function selectReagent(k){
+    selected=k;selName.textContent='✔ '+R[k].n+' ('+R[k].f+')';
+    document.querySelectorAll('.reagent').forEach(x=>x.classList.toggle('sel',x.dataset.key===k));
+}
 renderShelf();
 
 /* quantité */
@@ -117,14 +138,18 @@ function beakerSVG(u){return `
    <line x1="78" y1="80" x2="86" y2="80"/><text x="60" y="83">100</text>
    <line x1="80" y1="106" x2="86" y2="106"/><text x="64" y="109">50</text></g>
  <rect x="32" y="34" width="6" height="84" rx="3" fill="url(#sh${u})"/></svg>`;}
-function makeBeaker(x,y){const u=gid++;const b=document.createElement('div');b.className='beaker';b.style.left=x+'px';b.style.top=y+'px';
-  b.innerHTML=`<span class="vlabel">vide</span>`+beakerSVG(u);bench.appendChild(b);
-  const o={el:b,vol:{},lc:'#cfeaf7',pc:'#fff',precip:0,
-    lq:b.querySelector('.lq'),mn:b.querySelector('.mn'),pr:b.querySelector('.pr'),bb:b.querySelector('.bb'),gs:b.querySelector('.gs'),lbl:b.querySelector('.vlabel')};
-  b._o=o;beakers.push(o);b.addEventListener('pointerdown',e=>startDrag(e,o));
-  let lt=0;b.addEventListener('pointerup',()=>{if(moved)return;const t=Date.now();
-    if(t-lt<320){empty(o);lt=0;return;}lt=t;
-    if(selected)addR(o,selected);});return o;}
+
+function makeBeaker(x,y){
+    const u=gid++;const b=document.createElement('div');b.className='beaker';b.style.left=x+'px';b.style.top=y+'px';
+    b.innerHTML=`<span class="vlabel">vide</span>`+beakerSVG(u);bench.appendChild(b);
+    const o={el:b,vol:{},lc:'#cfeaf7',pc:'#fff',precip:0,
+      lq:b.querySelector('.lq'),mn:b.querySelector('.mn'),pr:b.querySelector('.pr'),bb:b.querySelector('.bb'),gs:b.querySelector('.gs'),lbl:b.querySelector('.vlabel')};
+    b._o=o;beakers.push(o);b.addEventListener('pointerdown',e=>startDrag(e,o));
+    let lt=0;b.addEventListener('pointerup',()=>{if(moved)return;const t=Date.now();
+      if(t-lt<320){empty(o);lt=0;return;}lt=t;
+      if(selected)addR(o,selected);});return o;
+}
+
 makeBeaker(60,130);makeBeaker(210,130);
 document.getElementById('addBeaker').onclick=()=>{if(beakers.length<6)makeBeaker(40+Math.random()*220,120+Math.random()*60);};
 document.getElementById('reset').onclick=()=>{beakers.forEach(empty);clearJ();};
@@ -254,10 +279,16 @@ function clrG(o){o.gs.innerHTML='';}
 
 /* journal */
 const jl=document.getElementById('jlist');let lastEq='';
+const journalBox=document.getElementById('journalBox'),jtoggle=document.getElementById('jtoggle');
+function openJournal(){journalBox.style.display='block';jtoggle.classList.remove('has-new');}
+function closeJournal(){journalBox.style.display='none';}
+jtoggle.onclick=()=>{sfx&&sfx.click&&sfx.click();journalBox.style.display==='none'?openJournal():closeJournal();};
+document.getElementById('jclose').onclick=()=>{sfx&&sfx.click&&sfx.click();closeJournal();};
 function log(eq,obs){if(eq===lastEq)return;lastEq=eq;if(jl.querySelector('.jempty'))jl.innerHTML='';
   const it=document.createElement('div');it.className='jitem';it.innerHTML=`<div class="jeq">${eq}</div><div class="jobs">${obs}</div>`;
-  jl.prepend(it);while(jl.children.length>8)jl.lastChild.remove();}
-function clearJ(){jl.innerHTML='<div class="jempty">Aucune réaction…</div>';lastEq='';}
+  jl.prepend(it);while(jl.children.length>8)jl.lastChild.remove();
+  if(journalBox.style.display==='none')jtoggle.classList.add('has-new');}
+function clearJ(){jl.innerHTML='<div class="jempty">Aucune réaction…</div>';lastEq='';jtoggle.classList.remove('has-new');}
 
 /* =============== ONGLETS =============== */
 document.querySelectorAll('.tab[data-v]').forEach(t=>t.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
@@ -454,18 +485,18 @@ function rnd(a,b){return a+Math.random()*(b-a);}
 function buildSample(){scopeC.innerHTML='';
   if(sample==='vegetal'||sample==='animal'){
     const cell=document.createElement('div');cell.className='cell'+(sample==='animal'?' acell':'');scopeC.appendChild(cell);
-    const org=[['nucleus','54%','34%','Noyau · contient l\'ADN'],['mito','18%','56%','Mitochondrie · énergie (ATP)'],['vacuole','16%','24%','Vacuole · réserve d\'eau']];
+    const org=[['nucleus','54%','34%',"Noyau · contient l'ADN"],['mito','18%','56%','Mitochondrie · énergie (ATP)'],['vacuole','16%','24%',"Vacuole · réserve d'eau"]];
     if(sample==='vegetal')org.push(['chloro','30%','24%','Chloroplaste · photosynthèse']);
     org.forEach(([cl,l,t,n])=>{const d=document.createElement('div');d.className='organ '+cl;d.style.left=l;d.style.top=t;d.dataset.n=n;
       d.addEventListener('pointerdown',e=>showTag(e,n));cell.appendChild(d);});
-    microDesc.textContent=sample==='vegetal'?'Cellule végétale : paroi, vacuole et chloroplastes. Touche un organite.':'Cellule animale : pas de paroi ni de chloroplaste. Touche un organite.';
+    microDesc.textContent=sample==='vegetal'?"Cellule végétale : paroi, vacuole et chloroplastes. Touche un organite.":"Cellule animale : pas de paroi ni de chloroplaste. Touche un organite.";
   } else { // sang
     for(let i=0;i<46;i++){const d=document.createElement('div');d.className='rbc';d.style.left=rnd(6,80)+'%';d.style.top=rnd(6,80)+'%';
-      d.addEventListener('pointerdown',e=>showTag(e,'Globule rouge (hématie) · transporte l\'O₂'));scopeC.appendChild(d);}
+      d.addEventListener('pointerdown',e=>showTag(e,"Globule rouge (hématie) · transporte l'O₂"));scopeC.appendChild(d);}
     for(let i=0;i<4;i++){const d=document.createElement('div');d.className='wbc';d.style.left=rnd(15,70)+'%';d.style.top=rnd(15,70)+'%';
-      d.addEventListener('pointerdown',e=>showTag(e,'Globule blanc (leucocyte) · défense'));scopeC.appendChild(d);}
+      d.addEventListener('pointerdown',e=>showTag(e,"Globule blanc (leucocyte) · défense"));scopeC.appendChild(d);}
     for(let i=0;i<8;i++){const d=document.createElement('div');d.className='plt';d.style.left=rnd(8,85)+'%';d.style.top=rnd(8,85)+'%';
-      d.addEventListener('pointerdown',e=>showTag(e,'Plaquette · coagulation'));scopeC.appendChild(d);}
+      d.addEventListener('pointerdown',e=>showTag(e,"Plaquette · coagulation"));scopeC.appendChild(d);}
     microDesc.textContent='Frottis sanguin : beaucoup de globules rouges, quelques globules blancs et des plaquettes. Touche une cellule.';
   }
 }
@@ -531,7 +562,18 @@ function renderTP(){tpList.innerHTML='';
     g.items.forEach(e=>{const card=document.createElement('div');card.className='tpcard';
       card.innerHTML=`<span class="ic">${e.ic}</span><div style="flex:1"><div class="t">${e.t}</div><div class="q">${e.goal}</div></div><span class="tpgo">▶</span>`;
       card.onclick=()=>{sfx.click();launchTP(e);};tpList.appendChild(card);});});}
-function launchTP(e){document.querySelector(`.tab[data-v="${e.mode}"]`).click();toast(e.ic+' '+e.t+' — '+e.goal);}
+function launchTP(e){
+  const tab=document.querySelector(`.tab[data-v="${e.mode}"]`);
+  if(tab){
+    tab.click();
+  }else{
+    document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    const sec=document.getElementById(e.mode);
+    if(sec)sec.classList.add('active');
+  }
+  toast(e.ic+' '+e.t+' — '+e.goal);
+}
 function toast(msg){let t=document.getElementById('toast');if(!t){t=document.createElement('div');t.id='toast';document.body.appendChild(t);}
   t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),4500);}
 renderTP();
@@ -665,6 +707,7 @@ const NOTE={H:"Le plus léger ; forme l'eau avec l'oxygène.",O:"Indispensable �
   Au:"L'or ; métal noble, ne s'oxyde pas.",Ag:"L'argent ; AgCl précipite en blanc.",
   Mn:"Manganèse ; le permanganate KMnO₄ est violet.",K:"Potassium ; métal alcalin très réactif."};
 const grid=document.getElementById('ptgrid');
+if(grid){
 PT.trim().split('\n').forEach(line=>{const[z,sym,nom,cat,g,p]=line.trim().split(/\s+/);
   const el=document.createElement('div');el.className='elem '+cat;el.style.gridColumn=g;el.style.gridRow=p;
   el.innerHTML=`<small>${z}</small>${sym}`;
@@ -673,4 +716,60 @@ PT.trim().split('\n').forEach(line=>{const[z,sym,nom,cat,g,p]=line.trim().split(
       <div class="fam">${FAM[cat]}</div>${NOTE[sym]?`<div class="note">${NOTE[sym]}</div>`:''}</div>`;};
   grid.appendChild(el);});
 const leg=document.getElementById('legend');
-Object.keys(FAM).filter(k=>k!=='unk').forEach(k=>{const s=document.createElement('span');s.innerHTML=`<i class="${k}" style="background:${getComputedStyle(document.querySelector('.'+k)).backgroundColor}"></i>${FAM[k]}`;leg.appendChild(s);});
+if(leg){Object.keys(FAM).filter(k=>k!=='unk').forEach(k=>{const s=document.createElement('span');s.innerHTML=`<i class="${k}" style="background:${getComputedStyle(document.querySelector('.'+k)).backgroundColor}"></i>${FAM[k]}`;leg.appendChild(s);});}
+}
+
+// DISSECTION INTERACTIVE
+let frogDissected=false;
+function toggleFrogCut(){
+  const frog=document.getElementById('frogDisplay');
+  frogDissected=!frogDissected;
+  frog.textContent=frogDissected?'🐸💔':'🐸';
+  const info=document.getElementById('dissectionInfo');
+  info.innerHTML=frogDissected?'<b style="color:red">✂️ DÉCOUPE COMMENCÉE!</b><br>La grenouille est maintenant ouverte! Clique sur les organes pour les explorer.<br><b>Cœur:</b> Organe vital, pompe du sang. <b>Couleur ROUGE!</b>':'<b>Frog intact!</b> Clique sur la grenouille pour la découper!';
+}
+
+function dissectPart(part){
+  const info=document.getElementById('dissectionInfo');
+  const organs={
+    'head':'<b>🧠 CERVEAU & TÊTE</b><br>Centre du système nerveux. Reçoit les signaux, commande les mouvements. La grenouille a des yeux saillants pour voir dans l\'eau!',
+    'heart':'<b style="color:red">❤️ CŒUR (VIANDE ROUGE!)</b><br><b>MUSCLE ROUGE</b> très important! Pompe le sang. <b>3 chambres</b> chez la grenouille (contrairement aux 4 chez l\'humain). Palpitations rapides!',
+    'lungs':'<b>💨 POUMONS</b><br>Respiration. La grenouille respire PAR LA PEAU aussi! Échanges gazeux. Poumons petits mais efficaces.',
+    'stomach':'<b>🫖 ESTOMAC</b><br>Digestion des insectes! Les grenouilles mangent des mouches. L\'estomac sécrète du suc gastrique pour dissoudre la nourriture.',
+    'liver':'<b style="color:brown">🩸 FOIE (MARRON-ROUGE)</b><br>Filtre du sang, stocke l\'énergie. Très important pour les grenouilles. Couleur rougeâtre.'
+  };
+  if(organs[part]){
+    info.innerHTML=organs[part]+' <br><br><small>Clique sur un autre organe!</small>';
+  }
+}
+
+// ANATOMIE ANIMALS
+function showAnimal(animal){
+  const info=document.getElementById('animalInfo');
+  const animals={
+    'humain':'<b>👨 HUMAIN</b><br><b>Systèmes:</b><br>• 🧠 <b>Nerveux:</b> Cerveau, Moelle épinière, Nerfs.<br>• ❤️ <b>Circulatoire:</b> Cœur, Artères, Veines.<br>• 🫖 <b>Digestif:</b> Estomac, Intestins, Foie.<br>• 💨 <b>Respiratoire:</b> Poumons, Trachée.',
+    'criquet':'<b>🦗 CRIQUET</b><br>• <b>Exosquelette:</b> Armure externe de chitine.<br>• <b>Appareil buccal:</b> Mandibules puissantes.<br>• <b>Ailes:</b> Stridulation (chant) pour communication.<br>• <b>Pattes:</b> 6 pattes, postérieures pour sauter!',
+    'abeille':'<b>🐝 ABEILLE</b><br>• <b>Yeux:</b> Vision ultraviolette.<br>• <b>Trompe:</b> Pour aspirer le nectar.<br>• <b>Glandes:</b> Produisent la salive.<br>• <b>Sac à miel:</b> Stocke le nectar.',
+    'grenouille':'<b>🐸 GRENOUILLE</b><br>• <b>Peau:</b> Perméable! Respiration cutanée.<br>• <b>Cœur:</b> 3 chambres.<br>• <b>Métamorphose:</b> Têtard → Grenouille.<br>• <b>Amphibien:</b> Terre ET eau!',
+    'poisson':'<b>🐟 POISSON</b><br>• <b>Branchies:</b> Extraction O₂.<br>• <b>Nageoires:</b> Propulsion.<br>• <b>Écailles:</b> Protection.<br>• <b>Cœur:</b> 2 chambres.',
+    'papillon':'<b>🦋 PAPILLON</b><br>• <b>Métamorphose:</b> Œuf → Chenille → Chrysalide → Papillon!<br>• <b>Trompe:</b> Spiralée.<br>• <b>Ailes:</b> Écailles colorées.',
+    'souris':'<b>🐭 SOURIS</b><br>• <b>Mammifère:</b> Allaitement.<br>• <b>Cœur:</b> 4 chambres.<br>• <b>Oreilles:</b> Ouïe excellente.<br>• <b>Vibrisse:</b> Poils tactiles.',
+    'singe':'<b>🐵 SINGE</b><br>• <b>Primates:</b> Pouces opposables.<br>• <b>Vision:</b> Couleurs trichromate.<br>• <b>Cerveau:</b> Très développé.<br>• <b>ADN:</b> Très similaire à l\'humain.'
+  };
+  if(animals[animal]){
+    info.innerHTML=animals[animal];
+  }
+}
+
+// EXPERIMENTS INTERACTIFS
+function startExperiment(exp){
+  const result=document.getElementById('expResult');
+  const exps={
+    'reflex':'<b>🦵 TEST RÉFLEXE EN COURS...</b><br><br>🔄 Stimulus appliqué!<br><br>⚡ <b>RÉSULTAT:</b><br>Temps de réaction: <b>150ms</b> ✅',
+    'electro':'<b>⚡ ÉLECTROCUTION SIMULATION</b><br><br>🔌 Voltage appliqué: 12V (sûr)<br>🦸 Grenouille connectée<br><br>⚡ <b>RÉSULTAT:</b><br>Contraction musculaire: <b>IMMÉDIATE!</b> 💪',
+    'photo':'<b>🌻 PHOTOTROPISME EN COURS...</b><br><br>💡 Lumière appliquée d\'un côté<br><br>✅ <b>RÉSULTAT:</b><br>La plante se tourne vers la lumière! 180° en 24h'
+  };
+  if(exps[exp]){
+    result.innerHTML=exps[exp];
+  }
+}

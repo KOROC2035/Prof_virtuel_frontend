@@ -24,6 +24,7 @@ const ICONS={
   squads:"data:image/png;base64,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",
 };
 
+// ═══════════ FIREBASE INIT ═══════════
 const firebaseConfig = {
   apiKey: "AIzaSyC6iqU4Gs868WvGe09gShl85-B79ATxMeM",
   authDomain: "krak-64aec.firebaseapp.com",
@@ -116,8 +117,6 @@ const COURS={
   ]
 };
 
-const MATHS3=[{"n": 1, "t": "Calcul littéral", "c": "Leçon 1 - Maths 3ème\n\nQuotients: a/b = c/d équivaut à ad = bc\n\nDéveloppement:\nk(a+b) = ka + kb\n\nIdentités remarquables:\n(a+b)² = a² + 2ab + b²\n(a-b)² = a² - 2ab + b²\n(a+b)(a-b) = a² - b²\n\nFactorisation: mettre en facteur commun\nEx: 3x + 6 = 3(x+2)"}, {"n": 2, "t": "Propriétés de Thalès", "c": "Leçon 2 - Maths 3ème\n\nThéorème de Thalès:\nSi (BC) parallèle à (MN) dans un triangle,\nalors AM/AB = AN/AC = MN/BC\n\nApplication: calculer des longueurs inconnues\n\nRéciproque: si AM/AB = AN/AC alors BC parallèle MN"}, {"n": 3, "t": "Racines carrées", "c": "Leçon 3 - Maths 3ème\n\nRacine carrée: racine(a) existe si a >= 0\n(racine(a))² = a\nracine(a x b) = racine(a) x racine(b)\nracine(a/b) = racine(a) / racine(b)\n\nEx: racine(36)=6, racine(2) approx 1,414\n\nRationaliser: multiplier par le conjugué"}, {"n": 4, "t": "Triangle rectangle", "c": "Leçon 4 - Maths 3ème\n\nThéorème de Pythagore:\nBC² = AB² + AC² (angle droit en A)\n\nTrigonométrie:\ncos = côté adjacent / hypoténuse\nsin = côté opposé / hypoténuse\ntan = côté opposé / côté adjacent\n\nCercle circonscrit: centre = milieu de l'hypoténuse"}, {"n": 5, "t": "Calcul numérique", "c": "Leçon 5 - Maths 3ème\n\nPuissances:\naⁿ x aᵐ = aⁿ⁺ᵐ\naⁿ / aᵐ = aⁿ⁻ᵐ\na⁰ = 1\n\nNotation scientifique: a x 10ⁿ (1 <= a < 10)\n\nPGCD: Plus Grand Commun Diviseur\nFractions irréductibles: diviser numérateur et dénominateur par PGCD"}, {"n": 6, "t": "Vecteurs", "c": "Leçon 6 - Maths 3ème\n\nVecteur = direction + sens + longueur (norme)\n\nEgalité: même direction, même sens, même norme\n\nRelation de Chasles:\nAB + BC = AC\n\nVecteurs colinéaires: même direction (ou opposée)\n\nCombiner: multiplier un vecteur par un scalaire"}, {"n": 8, "t": "Equations et inéquations", "c": "Leçon 8 - Maths 3ème\n\nEquation du 1er degré: ax + b = 0 => x = -b/a\n\nInéquation: ax + b < 0\nATTENTION: si on divise par un négatif, le sens change!\n\nEquation produit:\nA x B = 0 => A=0 ou B=0\n\nReprésentation sur une droite graduée"}, {"n": 9, "t": "Coordonnées d'un vecteur", "c": "Leçon 9 - Maths 3ème\n\nVecteur AB de coordonnées (xB-xA ; yB-yA)\n\nNorme: ||AB|| = racine((xB-xA)² + (yB-yA)²)\n\nSomme: (x;y) + (x';y') = (x+x' ; y+y')\n\nMilieu de [AB]: ((xA+xB)/2 ; (yA+yB)/2)"}, {"n": 10, "t": "Equations de droites", "c": "Leçon 10 - Maths 3ème\n\nEquation réduite: y = ax + b\na = coefficient directeur (pente)\nb = ordonnée à l'origine\n\nDroites parallèles: même coefficient a\n\nCalcul de a:\na = (yB - yA) / (xB - xA)"}, {"n": 11, "t": "Statistique", "c": "Leçon 11 - Maths 3ème\n\nEffectif: nombre de fois qu'une valeur apparaît\nFréquence = effectif / effectif total\n\nMoyenne = somme(valeur x effectif) / effectif total\n\nMode = valeur la plus fréquente\n\nDiagrammes: bâtons, circulaire, histogramme"}, {"n": 12, "t": "Systèmes d'équations", "c": "Leçon 12 - Maths 3ème\n\nSystème de 2 équations à 2 inconnues:\n  ax + by = c\n  a'x + b'y = c'\n\nMéthode de substitution:\nExprimer x en fonction de y dans la 1ère équation\npuis substituer dans la 2ème\n\nMéthode par combinaison:\nMultiplier pour éliminer une inconnue"}, {"n": 13, "t": "Applications affines", "c": "Leçon 13 - Maths 3ème\n\nApplication affine: f(x) = ax + b\n\nApplication linéaire: f(x) = ax (cas particulier où b=0)\n\na = taux d'accroissement\n\nReprésentation graphique = droite\n\nf(x1) - f(x2) = a(x1 - x2)"}, {"n": 14, "t": "Pyramides et cônes", "c": "Leçon 14 - Maths 3ème\n\nPyramide:\nVolume = (1/3) x Aire base x hauteur\n\nCône:\nVolume = (1/3) x pi x r² x h\nAire latérale = pi x r x génératrice\n\nSection par plan parallèle à la base:\nRéduction à l'échelle k\nAires multipliées par k²\nVolumes multipliés par k³"}];
-
 const ECO_DB={
   'photosynthèse':[{u:'📖 khanacademy.org/biologie',t:'La photosynthèse — Khan Academy',d:'Comment les plantes produisent leur énergie via la chlorophylle…'},{u:'🎓 lumni.fr/svt',t:'Photosynthèse — Lumni SVT 1re',d:'Vidéo officielle avec schéma détaillé…'}],
   'pythagore':[{u:'📐 kartable.fr/maths',t:'Théorème de Pythagore — Cours complet',d:'Avec exercices corrigés niveau Collège et Lycée…'},{u:'📚 lelivrescolaire.fr',t:'Géométrie : Pythagore et Thalès',d:'Manuel numérique gratuit avec exemples…'}],
@@ -132,6 +131,24 @@ const CODES=['KRAK2025','LYCEE01','DEMO99'];
 const ADMIN_CODES=['ADMIN-KRAK','PROF-KRAK'];
 const REPORT_THRESHOLD=3;
 let user={n:'',c:'',admin:false};
+let currentAdminCode='';
+
+// Génère un nombre d'abonnés stable par auteur (faux mais cohérent)
+function fakeFollowers(name){
+  let h=0; const s=(name||'krak').toLowerCase();
+  for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0;}
+  const n=1200+(h%920000); // entre 1,2K et ~920K
+  if(n>=1000000)return (n/1000000).toFixed(1)+'M';
+  if(n>=1000)return (n/1000).toFixed(1).replace('.0','')+'K';
+  return ''+n;
+}
+
+function avatarColor(name){
+  const grads=['linear-gradient(135deg,#35afeb,#52ec9b)','linear-gradient(135deg,#8b5cf6,#35afeb)','linear-gradient(135deg,#fbbf24,#f97316)','linear-gradient(135deg,#ec4899,#8b5cf6)','linear-gradient(135deg,#52ec9b,#10b981)','linear-gradient(135deg,#1a56ff,#35afeb)'];
+  let h=0; const s=(name||'k').toLowerCase();
+  for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0;}
+  return grads[h%grads.length];
+}
 
 function doLogin(){
   const n=document.getElementById('lName').value.trim();
@@ -142,30 +159,19 @@ function doLogin(){
   const isAdmin=ADMIN_CODES.includes(k);
   if(!CODES.includes(k)&&!isAdmin){toast('Code incorrect — demande à ton prof 🔑','err');return;}
   
-  const btn = document.querySelector('.login-btn');
-  btn.textContent = 'Connexion sécurisée...';
-
-  // VRAIE connexion silencieuse à Firebase (avec le compte de test)
-  firebase.auth().signInWithEmailAndPassword("eleve.test@ecole.com", "motdepasse123")
-    .then(() => {
-      user={n,c,admin:isAdmin};
-      document.getElementById('loginWrap').style.display='none';
-      document.getElementById('bnav').style.display='flex';
-      document.getElementById('heroName').innerHTML='Bonjour <span>'+n+'</span> !';
-      document.getElementById('hAvatar').textContent=n.charAt(0).toUpperCase();
-      document.getElementById('profName').textContent=n;
-      document.getElementById('profClass').textContent=c+(isAdmin?' · 🛡️ Admin':'');
-      const sf=document.getElementById('statFollowers'); if(sf)sf.textContent=fakeFollowers(n);
-      
-      btn.textContent = 'Accéder à KRAK 2 →';
-      goTo('home');
-      toast(isAdmin?('🛡️ Mode admin activé — bienvenue '+n+' !'):('Bienvenue '+n+' sur KRAK 2 ! 🎉'));
-    })
-    .catch((error) => {
-      btn.textContent = 'Accéder à KRAK 2 →';
-      console.error("Erreur Firebase :", error);
-      toast('Erreur de connexion à la base de données ⚠️', 'err');
-    });
+  user={n,c,admin:isAdmin};
+  if(isAdmin) currentAdminCode=k;
+  loadUserData(); 
+  
+  document.getElementById('loginWrap').style.display='none';
+  document.getElementById('bnav').style.display='flex';
+  document.getElementById('heroName').innerHTML='Bonjour <span>'+n+'</span> !';
+  document.getElementById('hAvatar').textContent=n.charAt(0).toUpperCase();
+  document.getElementById('profName').textContent=n;
+  document.getElementById('profClass').textContent=c+(isAdmin?' · 🛡️ Admin':'');
+  const sf=document.getElementById('statFollowers'); if(sf)sf.textContent=fakeFollowers(n);
+  goTo('home');
+  toast(isAdmin?('🛡️ Mode admin activé — bienvenue '+n+' !'):('Bienvenue '+n+' sur KRAK ! 🎉'));
 }
 
 function doLogout(){
@@ -187,13 +193,194 @@ function goTo(p){
   }
   if(p==='krakminute')renderVids('all');
   if(p==='devoirs'){
-      renderCours('Term');
+    renderCours('Term');
+    if(typeof db !== 'undefined' && db){
       loadDevoirs();
-      listenToAiTeacher("salon_devoirs", "askMsgs", false);
+    } else {
+      setTimeout(()=>{if(typeof db !== 'undefined' && db){loadDevoirs();}},500);
+    }
   }
   if(p==='ecosearch'){
-      const ei=document.getElementById('ecoAiIn');if(ei)ei.focus();
-      listenToAiTeacher(currentSearchChannelId, "ecoMsgs", true);
+    if(!ecoConv||ecoConv.length===0){
+      const saved=document.getElementById('ecoMsgs').innerHTML;
+      if(!saved || !saved.includes('ks-msg')){
+        loadKrakiHistory();
+      }
+    }
+    const wlogo=document.querySelector('#ksWelcome .ks-welcome-icon img');
+    if(wlogo && typeof ICONS !== 'undefined' && ICONS.krakmin){wlogo.src=ICONS.krakmin;}
+    if(typeof renderKrakiConversations==='function')renderKrakiConversations();
+    const ei=document.getElementById('ecoAiIn');if(ei)ei.focus();
+  }
+}
+
+// ════ NOTIFICATION SYSTEM ════
+let notifications=[];
+function loadNotifications(){
+  try{
+    const saved=localStorage.getItem('krak_notifications');
+    notifications=saved?JSON.parse(saved):[];
+    updateNotifUI();
+  }catch(e){notifications=[];}
+}
+
+function addNotification(type,title,text){
+  const notif={
+    id:Date.now(), type:type, title:title, text:text,
+    time:new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}),
+    read:false
+  };
+  notifications.unshift(notif);
+  if(notifications.length>50)notifications.pop();
+  saveNotifications();
+  updateNotifUI();
+  showToast('🔔 '+title);
+}
+
+function saveNotifications(){
+  try{localStorage.setItem('krak_notifications',JSON.stringify(notifications));}catch(e){}
+}
+
+function updateNotifUI(){
+  const badge=document.getElementById('notifBadge');
+  const list=document.getElementById('notifList');
+  const empty=document.getElementById('notifEmpty');
+  
+  const count=notifications.length;
+  if(count>0){
+    badge.textContent=count>9?'9+':count;
+    badge.style.display='flex';
+  }else{
+    badge.style.display='none';
+  }
+  
+  if(count===0){
+    list.innerHTML='';
+    empty.style.display='block';
+  }else{
+    empty.style.display='none';
+    list.innerHTML=notifications.map(n=>`
+      <div class="notif-item ${n.read?'':'unread'}">
+        <div class="notif-title">${n.title}</div>
+        <div class="notif-text">${n.text}</div>
+        <div class="notif-time">${n.time}</div>
+      </div>
+    `).join('');
+  }
+}
+
+function toggleNotifications(){
+  const dd=document.getElementById('notifDropdown');
+  dd.classList.toggle('active');
+  if(dd.classList.contains('active')){
+    notifications.forEach(n=>n.read=true);
+    saveNotifications();
+    updateNotifUI();
+  }
+}
+
+function clearNotifications(){
+  notifications=[];
+  saveNotifications();
+  updateNotifUI();
+  const dd=document.getElementById('notifDropdown');
+  dd.classList.remove('active');
+}
+
+// ════ USER DATA SYSTEM ════
+let userData={
+  profilePhoto:null, followers:0, videoLikes:{}, userLikedVideos:{}, videoViews:{}
+};
+
+function loadUserData(){
+  if(!user.n)return; 
+  try{
+    const key='krak_user_'+user.n+'_'+user.c;
+    const saved=localStorage.getItem(key);
+    if(saved){
+      userData=JSON.parse(saved);
+    }else{
+      const newFollowers=Math.floor(Math.random()*500)+50;
+      userData={profilePhoto:null, followers:newFollowers, videoViews:{}};
+      localStorage.setItem(key,JSON.stringify(userData));
+    }
+  }catch(e){
+    const newFollowers=Math.floor(Math.random()*500)+50;
+    userData={profilePhoto:null, followers:newFollowers, videoViews:{}};
+  }
+  updateProfileUI();
+}
+
+function saveUserData(){
+  if(!user.n)return;
+  try{
+    const key='krak_user_'+user.n+'_'+user.c;
+    localStorage.setItem(key,JSON.stringify(userData));
+  }catch(e){}
+}
+
+function toggleVideoLike(videoId){
+  if(!userData.videoLikes[videoId]) userData.videoLikes[videoId]=0;
+  if(userData.userLikedVideos[videoId]){
+    userData.userLikedVideos[videoId]=false;
+    userData.videoLikes[videoId]=Math.max(0,userData.videoLikes[videoId]-1);
+  }else{
+    userData.userLikedVideos[videoId]=true;
+    userData.videoLikes[videoId]++;
+  }
+  saveUserData();
+  updateLikeUI(videoId);
+  return userData.userLikedVideos[videoId];
+}
+
+function getLikeCount(videoId){ return userData.videoLikes?.[videoId]||0; }
+function isVideoLiked(videoId){ return userData.userLikedVideos?.[videoId]||false; }
+
+function trackVideoView(videoId){
+  if(!userData||!userData.videoViews)return;
+  if(!userData.videoViews[videoId]) userData.videoViews[videoId]=0;
+  userData.videoViews[videoId]++;
+  saveUserData();
+}
+
+function updateLikeUI(videoId){
+  const btn=document.querySelector(`button[data-video-id="${videoId}"]`);
+  if(!btn)return;
+  const liked=isVideoLiked(videoId);
+  const count=getLikeCount(videoId);
+  const heartImg=btn.querySelector('.heart-img');
+  const countSpan=btn.querySelector('.tt-act-num');
+  
+  if(liked){
+    btn.classList.add('liked');
+    if(typeof ICONS !== 'undefined') heartImg.src=ICONS.heartfull;
+  }else{
+    btn.classList.remove('liked');
+    if(typeof ICONS !== 'undefined') heartImg.src=ICONS.heart;
+  }
+  if(countSpan) countSpan.textContent=count;
+}
+
+function uploadProfilePhoto(file){
+  const reader=new FileReader();
+  reader.onload=(e)=>{
+    userData.profilePhoto=e.target.result;
+    saveUserData();
+    updateProfileUI();
+    showToast('📸 Photo mise à jour!');
+  };
+  reader.readAsDataURL(file);
+}
+
+function updateProfileUI(){
+  const badge=document.getElementById('statFollowers');
+  if(badge)badge.textContent=userData.followers||0;
+  const pp=document.getElementById('profPic');
+  if(pp&&userData.profilePhoto){
+    pp.style.backgroundImage=`url('${userData.profilePhoto}')`;
+    pp.textContent='';
+    pp.style.backgroundSize='cover';
+    pp.style.backgroundPosition='center';
   }
 }
 
@@ -209,617 +396,12 @@ function openModal(id){document.getElementById(id).classList.add('open');}
 function closeM(id){document.getElementById(id).classList.remove('open');}
 function closeOvr(e,id){if(e.target===document.getElementById(id))closeM(id);}
 
-// ═══════════ WHATSAPP ═══════════
+// ═══════════ WHATSAPP & JITSI ═══════════
 function openWA(subject){
-  const msg=encodeURIComponent('KRAK 2 — '+subject+' : Rejoins la session éducative 📚');
+  const msg=encodeURIComponent('KRAK — '+subject+' : Rejoins la session éducative 📚');
   window.open('https://wa.me/?text='+msg,'_blank');
   toast('WhatsApp ouvert 📱');
 }
-function openWACall(){
-  window.open('https://wa.me/?text='+encodeURIComponent('KRAK 2 — Rejoins mon Squad : '+document.getElementById('callSubj').textContent),'_blank');
-}
-
-let currentVideoTitle = '';
-// ═══════════ VIDEOS ═══════════
-let curFilter='all',ttMode='foryou',vidUnsub=null;
-let allVidsCache=[];           
-let likedVids={};try{likedVids=JSON.parse(localStorage.getItem('krakLikes')||'{}');}catch(e){likedVids={};} 
-let _skipRebuild=false; 
-let ttObserver=null;    
-const TT_BG=['ttb1','ttb2','ttb3','ttb4','ttb5','ttb6'];
-
-function renderVids(f){
-  curFilter=f;
-  const feed=document.getElementById('ttFeed');
-  feed.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100vh;flex-direction:column;gap:16px;background:#000"><div class="ldots"><span></span><span></span><span></span></div><div style="font-size:.85rem;color:rgba(255,255,255,.5)">Chargement...</div></div>';
-  if(vidUnsub)vidUnsub();
-  vidUnsub=db.collection('videos').orderBy('createdAt','desc').limit(30)
-    .onSnapshot(snap=>{
-      const fbVids=snap.docs.map(d=>({id:d.id,...d.data(),isReal:true}));
-      const demoVids=VIDS.slice(0,8).map(v=>({...v,isReal:false}));
-      const visibleFb = user.admin ? fbVids : fbVids.filter(v=>(v.reportCount||0)<REPORT_THRESHOLD);
-      allVidsCache=[...visibleFb,...demoVids];
-      updateModFab(fbVids);
-      if(_skipRebuild){_skipRebuild=false;return;} 
-      buildFeed(allVidsCache);
-    },()=>{allVidsCache=VIDS.slice(0,15).map(v=>({...v,isReal:false}));buildFeed(allVidsCache);});
-}
-
-function buildFeed(vids){
-  const feed=document.getElementById('ttFeed');
-  const savedScroll=feed.scrollTop; 
-  if(!vids.length){
-    feed.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100vh;flex-direction:column;gap:12px;color:rgba(255,255,255,.5);background:#000"><div style="font-size:3rem">🔍</div><div>Aucune vidéo trouvée</div></div>';
-    return;
-  }
-  feed.innerHTML=vids.map((v,i)=>{
-    const vid=v.id||('demo'+i);
-    const isLiked=likedVids[vid];
-    const likeCount=v.likes||v.lk||0; 
-    return `
-    <div class="tt-vid" data-id="${v.id||''}" data-lsf="${v.lsfUrl||''}">
-      ${v.isReal&&v.url
-        ?`<video class="tt-real-vid" src="${v.url}" loop playsinline webkit-playsinline
-            style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1"
-            onclick="toggleVidPlay(this)"></video>
-          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,transparent 30%,transparent 50%,rgba(0,0,0,.85) 100%);z-index:2" onclick="toggleVidPlayParent(this)"></div>
-          <div class="pause-icon" id="pi${i}" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3;width:74px;height:74px;border-radius:50%;background:rgba(53,175,235,.85);box-shadow:0 4px 20px rgba(53,175,235,.6);display:flex;align-items:center;justify-content:center;gap:7px;opacity:0;pointer-events:none;transition:opacity .3s"><span style="width:9px;height:30px;background:#fff;border-radius:3px"></span><span style="width:9px;height:30px;background:#fff;border-radius:3px"></span></div>`
-        :`<div class="tt-bg ${TT_BG[i%6]}">${v.e||'🎬'}</div>`
-      }
-      <div class="tt-progress" style="z-index:6"><div class="tt-progress-bar"></div></div>
-      <div class="tt-info" style="z-index:5">
-        <span class="tt-tag">${v.subj||v.s||'Éducatif'}</span>
-        <div class="tt-author">@${(v.author||v.a||'krak2').toLowerCase().replace(/\s/g,'')} <span class="tt-verified">✓</span></div>
-        <div class="tt-title">${v.title||v.t||''}</div>
-        <div class="tt-music"><span class="note">🎵</span> KrakMinute · KRAK 2</div>
-      </div>
-      <div class="tt-actions" style="z-index:5">
-        <div class="tt-avatar" onclick="openCreatorProfile('${(v.author||v.a||'KRAK 2').replace(/'/g,'')}')" style="cursor:pointer">${(v.author||v.a||'K').charAt(0).toUpperCase()}<span class="plus">+</span></div>
-        <button class="tt-act ${isLiked?'liked':''}" onclick="likeVid(this,'${vid}')">
-          <span class="tt-act-ico" style="background:none"><img class="heart-img" src="${isLiked?ICONS.heartfull:ICONS.heart}" style="width:34px;height:34px;object-fit:contain"></span>
-          <span class="tt-act-num">${likeCount}</span>
-        </button>
-        <button class="tt-act" onclick="openComments('${v.id||''}','${(v.title||v.t||'').replace(/'/g,'')}')">
-          <span class="tt-act-ico" style="background:none"><img src="${ICONS.comment}" style="width:34px;height:34px;object-fit:contain"></span>
-          <span class="tt-act-num">${v.comments||0}</span>
-        </button>
-        <button class="tt-act" onclick="saveVid(this,'${vid}')">
-          <span class="tt-act-ico" style="background:none"><img class="bmark-img" src="${ICONS.bookmark}" style="width:32px;height:34px;object-fit:contain;transition:transform .2s"></span>
-          <span class="tt-act-num">Garder</span>
-        </button>
-        <button class="tt-act" onclick="openShare('${(v.title||v.t||'KrakMinute').replace(/'/g,'')}','${v.url||''}')">
-          <span class="tt-act-ico" style="background:none"><img src="${ICONS.share}" style="width:30px;height:30px;object-fit:contain"></span>
-          <span class="tt-act-num">Partager</span>
-        </button>
-        <button class="tt-act" onclick="openReport('${v.id||''}','${(v.title||v.t||'').replace(/'/g,'')}','${(v.author||v.a||'').replace(/'/g,'')}')">
-          <span class="tt-act-ico" style="background:none;font-size:1.5rem">🚩</span>
-          <span class="tt-act-num">Signaler</span>
-        </button>
-        ${user.admin&&v.isReal?`<button class="tt-act" onclick="adminDeleteVid('${v.id}','${(v.title||'').replace(/'/g,'')}')">
-          <span class="tt-act-ico" style="background:none;font-size:1.5rem">🗑️</span>
-          <span class="tt-act-num" style="color:#ef4444">Suppr.</span>
-        </button>`:''}
-      </div>
-    </div>`;}).join('');
-  setTimeout(()=>{
-    if(ttObserver)ttObserver.disconnect();
-    ttObserver=new IntersectionObserver(entries=>{
-      entries.forEach(e=>{
-        const vid=e.target.querySelector('.tt-real-vid');
-        if(e.isIntersecting){
-          pauseAllFeedVideos(vid);
-          if(vid){ vid.play().catch(()=>{}); lsfSyncVideo(false); }
-          currentLsfUrl = e.target.dataset.lsf || '';
-          if(lsfActive) applyLsfSource();
-          const titleEl=e.target.querySelector('.tt-title');
-          if(titleEl){currentVideoTitle=titleEl.textContent;lsfOnVideoVisible(currentVideoTitle);}
-        }else{
-          if(vid){ vid.pause(); lsfSyncVideo(true); }
-        }
-      });
-    },{threshold:.6});
-    feed.querySelectorAll('.tt-vid').forEach(s=>ttObserver.observe(s));
-    if(savedScroll>0)feed.scrollTop=savedScroll;
-  },200);
-}
-
-function pauseAllFeedVideos(except){
-  document.querySelectorAll('#ttFeed .tt-real-vid').forEach(v=>{
-    if(v!==except){ try{ v.pause(); }catch(e){} }
-  });
-}
-
-function toggleKmSearch(){
-  const bar=document.getElementById('kmSearchBar');
-  if(bar.style.display==='none'||!bar.style.display){
-    bar.style.display='block';
-    document.getElementById('kmSearchInput').focus();
-  }else{
-    bar.style.display='none';
-    clearKmSearch();
-  }
-}
-function fakeFollowers(name){
-  let h=0; const s=(name||'krak').toLowerCase();
-  for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0;}
-  const n=1200+(h%920000); 
-  if(n>=1000000)return (n/1000000).toFixed(1)+'M';
-  if(n>=1000)return (n/1000).toFixed(1).replace('.0','')+'K';
-  return ''+n;
-}
-function avatarColor(name){
-  const grads=['linear-gradient(135deg,#35afeb,#52ec9b)','linear-gradient(135deg,#8b5cf6,#35afeb)','linear-gradient(135deg,#fbbf24,#f97316)','linear-gradient(135deg,#ec4899,#8b5cf6)','linear-gradient(135deg,#52ec9b,#10b981)','linear-gradient(135deg,#1a56ff,#35afeb)'];
-  let h=0; const s=(name||'k').toLowerCase();
-  for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0;}
-  return grads[h%grads.length];
-}
-
-function searchKm(){
-  const q=document.getElementById('kmSearchInput').value.trim().toLowerCase();
-  const box=document.getElementById('kmSearchResults');
-  const feed=document.getElementById('ttFeed');
-  if(!q){ box.style.display='none'; box.innerHTML=''; feed.style.display='block'; return; }
-  const filtered=allVidsCache.filter(v=>{
-    const t=(v.title||v.t||'').toLowerCase();
-    const s=(v.subj||v.s||'').toLowerCase();
-    const a=(v.author||v.a||'').toLowerCase();
-    return t.includes(q)||s.includes(q)||a.includes(q);
-  });
-  feed.style.display='none';
-  box.style.display='block';
-  if(!filtered.length){
-    box.innerHTML='<div style="text-align:center;color:rgba(255,255,255,.55);padding:40px 16px"><div style="font-size:2.4rem;margin-bottom:8px">🔍</div><div style="font-size:.9rem">Aucun résultat pour "'+q+'"</div><div style="font-size:.78rem;margin-top:6px;color:rgba(255,255,255,.35)">Essaie : maths, SVT, Pythagore, physique...</div></div>';
-    return;
-  }
-  const seen={}; const creators=[];
-  filtered.forEach(v=>{const a=v.author||v.a||'KRAK 2';if(!seen[a]){seen[a]=true;creators.push({a,v});}});
-  let html='<div style="font-size:.72rem;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;padding:4px 4px 8px">Comptes</div>';
-  creators.slice(0,4).forEach(c=>{
-    const handle='@'+c.a.toLowerCase().replace(/\s/g,'');
-    html+=`<div onclick="playFromSearch('${(c.v.id||'')}','${(c.v.title||c.v.t||'').replace(/'/g,'')}')" style="display:flex;align-items:center;gap:12px;padding:10px 6px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.06)">
-      <div style="width:46px;height:46px;border-radius:50%;background:${avatarColor(c.a)};display:flex;align-items:center;justify-content:center;font-size:1.05rem;font-weight:800;color:#06121f;flex-shrink:0">${c.a.charAt(0).toUpperCase()}</div>
-      <div style="flex:1;min-width:0">
-        <div style="display:flex;align-items:center;gap:5px"><span style="font-size:.92rem;font-weight:700;color:#fff">${c.a}</span><span style="color:#35afeb;font-size:.85rem">✓</span></div>
-        <div style="font-size:.76rem;color:rgba(255,255,255,.5)">${handle} · <b style="color:rgba(255,255,255,.75)">${fakeFollowers(c.a)}</b> abonnés</div>
-      </div>
-      <button onclick="event.stopPropagation();followCreator(this,'${c.a.replace(/'/g,'')}')" style="background:linear-gradient(135deg,#35afeb,#52ec9b);border:none;border-radius:8px;padding:7px 16px;font-size:.78rem;font-weight:700;color:#06121f;cursor:pointer;font-family:inherit">Suivre</button>
-    </div>`;
-  });
-  html+='<div style="font-size:.72rem;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;padding:14px 4px 8px">Vidéos</div>';
-  filtered.forEach(v=>{
-    const author=v.author||v.a||'KRAK 2';
-    const likes=v.likes||v.lk||0;
-    const thumb=v.isReal&&v.url
-      ?`<video src="${v.url}" muted style="width:84px;height:108px;object-fit:cover;border-radius:10px;flex-shrink:0;background:#000"></video>`
-      :`<div style="width:84px;height:108px;border-radius:10px;flex-shrink:0;background:linear-gradient(135deg,#1a2a44,#06121f);display:flex;align-items:center;justify-content:center;font-size:2rem">${v.e||'🎬'}</div>`;
-    html+=`<div onclick="playFromSearch('${(v.id||'')}','${(v.title||v.t||'').replace(/'/g,'')}')" style="display:flex;gap:12px;padding:10px 6px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.06)">
-      ${thumb}
-      <div style="flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center">
-        <div style="font-size:.9rem;font-weight:700;color:#fff;line-height:1.3;margin-bottom:5px">${v.title||v.t||'Vidéo'}</div>
-        <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
-          <span style="display:inline-block;font-size:.68rem;font-weight:700;color:#35afeb;background:rgba(53,175,235,.15);padding:2px 8px;border-radius:6px">${v.subj||v.s||'Éducatif'}</span>
-        </div>
-        <div style="font-size:.76rem;color:rgba(255,255,255,.5)">@${author.toLowerCase().replace(/\s/g,'')} <span style="color:#35afeb">✓</span> · ❤ ${likes} · 👁 ${fakeFollowers(v.title||author)}</div>
-      </div>
-    </div>`;
-  });
-  box.innerHTML=html;
-}
-
-function followCreator(btn,name){
-  if(btn.textContent==='Suivre'){
-    btn.textContent='Abonné ✓';
-    btn.style.background='rgba(255,255,255,.15)';
-    btn.style.color='#fff';
-    toast('✅ Tu suis '+name+' !');
-  }else{
-    btn.textContent='Suivre';
-    btn.style.background='linear-gradient(135deg,#35afeb,#52ec9b)';
-    btn.style.color='#06121f';
-  }
-}
-
-function currentFeedVideo(){
-  return [...document.querySelectorAll('#ttFeed .tt-real-vid')].find(v=>!v.paused) || null;
-}
-let _kmPausedVid=null;
-
-function closeCreator(){
-  closeM('m-creator');
-  if(_kmPausedVid){ try{_kmPausedVid.play();}catch(e){} _kmPausedVid=null; }
-}
-
-function openCreatorProfile(name){
-  name=name||'KRAK 2';
-  _kmPausedVid=currentFeedVideo();
-  pauseAllFeedVideos();
-  const vids=allVidsCache.filter(v=>(v.author||v.a||'KRAK 2')===name);
-  const totalLikes=vids.reduce((s,v)=>s+(v.likes||v.lk||0),0);
-  document.getElementById('creatorAvatar').style.background=avatarColor(name);
-  document.getElementById('creatorAvatar').textContent=name.charAt(0).toUpperCase();
-  document.getElementById('creatorName').textContent=name;
-  document.getElementById('creatorHandle').textContent='@'+name.toLowerCase().replace(/\s/g,'');
-  document.getElementById('creatorFollowers').textContent=fakeFollowers(name);
-  document.getElementById('creatorVideos').textContent=vids.length;
-  document.getElementById('creatorLikes').textContent=totalLikes>=1000?(totalLikes/1000).toFixed(1)+'K':totalLikes;
-  const btn=document.getElementById('creatorFollowBtn');
-  btn.textContent='Suivre';btn.style.background='linear-gradient(135deg,#35afeb,#52ec9b)';btn.style.color='#06121f';
-  const grid=document.getElementById('creatorVidGrid');
-  if(!vids.length){
-    grid.innerHTML='<div style="grid-column:1/-1;text-align:center;color:rgba(6,14,28,.4);padding:20px;font-size:.82rem">Aucune vidéo</div>';
-  }else{
-    grid.innerHTML=vids.map(v=>{
-      const t=(v.title||v.t||'').replace(/'/g,'');
-      const thumb=v.isReal&&v.url
-        ?`<video src="${v.url}" muted style="width:100%;height:100%;object-fit:cover"></video>`
-        :`<div style="width:100%;height:100%;background:linear-gradient(135deg,#1a2a44,#06121f);display:flex;align-items:center;justify-content:center;font-size:1.6rem">${v.e||'🎬'}</div>`;
-      return `<div onclick="closeM('m-creator');playFromSearch('${v.id||''}','${t}')" style="position:relative;aspect-ratio:9/16;border-radius:8px;overflow:hidden;cursor:pointer;background:#000">
-        ${thumb}
-        <div style="position:absolute;bottom:4px;left:4px;font-size:.62rem;color:#fff;text-shadow:0 1px 3px #000">❤ ${v.likes||v.lk||0}</div>
-      </div>`;
-    }).join('');
-  }
-  openModal('m-creator');
-}
-
-function toggleFollowCreator(btn){
-  const name=document.getElementById('creatorName').textContent;
-  if(btn.textContent==='Suivre'){
-    btn.textContent='Abonné ✓';btn.style.background='rgba(6,14,28,.1)';btn.style.color='#0a1628';
-    toast('✅ Tu suis '+name+' !');
-  }else{
-    btn.textContent='Suivre';btn.style.background='linear-gradient(135deg,#35afeb,#52ec9b)';btn.style.color='#06121f';
-  }
-}
-
-function playFromSearch(id,title){
-  document.getElementById('kmSearchResults').style.display='none';
-  document.getElementById('ttFeed').style.display='block';
-  document.getElementById('kmSearchBar').style.display='none';
-  document.getElementById('kmSearchInput').value='';
-  buildFeed(allVidsCache);
-  setTimeout(()=>{
-    const feed=document.getElementById('ttFeed');
-    const cards=[...feed.querySelectorAll('.tt-vid')];
-    const target=cards.find(c=>{
-      const t=(c.querySelector('.tt-title')||{}).textContent||'';
-      return (id&&c.dataset.id===id)||(title&&t.trim()===title.trim());
-    });
-    if(target)target.scrollIntoView({behavior:'smooth'});
-  },300);
-  toast('▶ Lecture : '+(title||'vidéo'));
-}
-function clearKmSearch(){
-  document.getElementById('kmSearchInput').value='';
-  const box=document.getElementById('kmSearchResults');
-  if(box){box.style.display='none';box.innerHTML='';}
-  document.getElementById('ttFeed').style.display='block';
-  buildFeed(allVidsCache);
-}
-
-async function likeVid(btn,id){
-  const img=btn.querySelector('.heart-img'),num=btn.querySelector('.tt-act-num');
-  const n=parseInt(num.textContent)||0;
-  if(btn.classList.contains('liked')){
-    btn.classList.remove('liked');
-    img.src=ICONS.heart;num.textContent=n-1;
-    delete likedVids[id];
-    saveLikes();
-    if(id&&!id.startsWith('demo')){_skipRebuild=true;db.collection('videos').doc(id).update({likes:firebase.firestore.FieldValue.increment(-1)});}
-  }else{
-    btn.classList.add('liked');
-    img.src=ICONS.heartfull;num.textContent=n+1;
-    likedVids[id]=true;
-    saveLikes();
-    img.style.transform='scale(1.4)';
-    setTimeout(()=>{img.style.transform='scale(1)';},200);
-    toast('💚 Vidéo aimée !');
-    if(id&&!id.startsWith('demo')){_skipRebuild=true;db.collection('videos').doc(id).update({likes:firebase.firestore.FieldValue.increment(1)});}
-  }
-}
-function saveLikes(){try{localStorage.setItem('krakLikes',JSON.stringify(likedVids));}catch(e){}}
-
-function shareVidLink(title){
-  const msg=encodeURIComponent('📚 Regarde "'+title+'" sur KRAK 2 !\n🔗 https://roaring-licorice-9e7497.netlify.app');
-  window.open('https://wa.me/?text='+msg,'_blank');
-  toast('📤 Lien partagé sur WhatsApp !');
-}
-
-function openComments(vidId,title){
-  openModal('m-comments');
-  document.getElementById('commentsTitle').textContent=title||'Commentaires';
-  document.getElementById('commentVidId').value=vidId;
-  loadComments(vidId);
-}
-
-function loadComments(vidId){
-  const box=document.getElementById('commentsList');
-  if(!vidId){box.innerHTML='<div style="text-align:center;color:rgba(6,14,28,.4);padding:20px;font-size:.82rem">Commentaires non dispo sur vidéos démo</div>';return;}
-  box.innerHTML='<div class="ldots" style="justify-content:center;padding:16px"><span></span><span></span><span></span></div>';
-  db.collection('videos').doc(vidId).collection('comments').orderBy('createdAt','desc').limit(20)
-    .onSnapshot(snap=>{
-      if(snap.empty){box.innerHTML='<div style="text-align:center;color:rgba(6,14,28,.4);padding:20px;font-size:.82rem">Aucun commentaire — sois le premier ! 💬</div>';return;}
-      box.innerHTML=snap.docs.map(d=>{const c=d.data();return`<div style="display:flex;gap:10px;margin-bottom:12px">
-        <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#35afeb,#52ec9b);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#06121f;flex-shrink:0">${(c.author||'?').charAt(0).toUpperCase()}</div>
-        <div><div style="font-size:.8rem;font-weight:700;margin-bottom:2px">${c.author||'Anonyme'}</div><div style="font-size:.82rem;color:rgba(6,14,28,.7);line-height:1.5">${c.text||''}</div></div>
-      </div>`;}).join('');
-    });
-}
-
-async function postComment(){
-  const vidId=document.getElementById('commentVidId').value;
-  const text=document.getElementById('commentText').value.trim();
-  if(!text){toast('Écris quelque chose 💬','err');return;}
-  if(!vidId){toast('Commentaire non disponible sur vidéo démo','err');return;}
-  await db.collection('videos').doc(vidId).collection('comments').add({
-    text,author:user.n||'Anonyme',createdAt:firebase.firestore.FieldValue.serverTimestamp()
-  });
-  await db.collection('videos').doc(vidId).update({comments:firebase.firestore.FieldValue.increment(1)});
-  document.getElementById('commentText').value='';
-  toast('💬 Commentaire publié !');
-}
-
-function saveVid(btn,id){
-  const img=btn.querySelector('.bmark-img');
-  const num=btn.querySelector('.tt-act-num');
-  if(btn.classList.contains('saved')){
-    btn.classList.remove('saved');
-    img.src=ICONS.bookmark;
-    img.style.transform='scale(1)';
-    img.style.filter='none';
-    num.textContent='Garder';
-  }else{
-    btn.classList.add('saved');
-    img.src=ICONS.bookmarkfull;
-    img.style.transform='scale(1.3)';
-    setTimeout(()=>{img.style.transform='scale(1)';},220);
-    img.style.filter='drop-shadow(0 0 6px #35afeb)';
-    num.textContent='Sauvé ✓';
-    toast('🔖 Vidéo sauvegardée !');
-  }
-}
-
-function openShare(title,url){
-  document.getElementById('shareTitle').textContent=title||'Vidéo KrakMinute';
-  document.getElementById('shareUrl').value=url||window.location.href;
-  openModal('m-share');
-}
-
-// ═══════════ MODÉRATION ═══════════
-function openReport(id,title,author){
-  document.getElementById('reportVidId').value=id||'';
-  document.getElementById('reportVidTitle').value=title||'';
-  document.getElementById('reportVidAuthor').value=author||'';
-  openModal('m-report');
-}
-
-async function submitReport(reason){
-  const id=document.getElementById('reportVidId').value;
-  const title=document.getElementById('reportVidTitle').value;
-  const author=document.getElementById('reportVidAuthor').value;
-  closeM('m-report');
-  if(!id){ 
-    toast('🚩 Merci, signalement enregistré !');
-    return;
-  }
-  try{
-    await db.collection('reports').add({
-      videoId:id, videoTitle:title, videoAuthor:author, reason,
-      reporter:user.n||'Anonyme', reporterClass:user.c||'',
-      createdAt:firebase.firestore.FieldValue.serverTimestamp()
-    });
-    await db.collection('videos').doc(id).update({reportCount:firebase.firestore.FieldValue.increment(1)});
-    toast('🚩 Merci ! Signalé à l\'équipe KRAK.');
-  }catch(e){ toast('🚩 Merci, signalement pris en compte !'); }
-}
-
-function updateModFab(fbVids){
-  const fab=document.getElementById('modFab');
-  if(!fab)return;
-  if(!user.admin){ fab.style.display='none'; return; }
-  fab.style.display='flex';
-  const flagged=(fbVids||[]).filter(v=>(v.reportCount||0)>0).length;
-  const badge=document.getElementById('modFabBadge');
-  if(flagged>0){ badge.style.display='flex'; badge.textContent=flagged; }
-  else badge.style.display='none';
-}
-
-function openModeration(){
-  if(!user.admin){toast('Réservé aux admins 🔒','err');return;}
-  document.getElementById('modThreshold').textContent=REPORT_THRESHOLD;
-  const list=document.getElementById('modList');
-  list.innerHTML='<div class="ldots" style="justify-content:center;padding:20px"><span></span><span></span><span></span></div>';
-  openModal('m-moderation');
-  db.collection('videos').where('reportCount','>',0).onSnapshot(snap=>{
-    if(snap.empty){
-      list.innerHTML='<div style="text-align:center;color:rgba(6,14,28,.45);padding:30px"><div style="font-size:2.4rem;margin-bottom:8px">✅</div><div style="font-size:.9rem;font-weight:700">Aucune vidéo signalée</div><div style="font-size:.78rem;margin-top:4px">Tout est propre sur KRAK !</div></div>';
-      return;
-    }
-    const docs=snap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(b.reportCount||0)-(a.reportCount||0));
-    list.innerHTML=docs.map(v=>{
-      const hidden=(v.reportCount||0)>=REPORT_THRESHOLD;
-      return `<div style="background:#f4f8fc;border:1px solid ${hidden?'rgba(239,68,68,.4)':'#dde8f0'};border-radius:14px;padding:13px">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-          <span style="background:${hidden?'#ef4444':'#f97316'};color:#fff;font-size:.72rem;font-weight:800;padding:3px 9px;border-radius:8px">🚩 ${v.reportCount||0} signalement${(v.reportCount||0)>1?'s':''}</span>
-          ${hidden?'<span style="font-size:.7rem;font-weight:700;color:#ef4444">MASQUÉE AUTO</span>':''}
-        </div>
-        <div style="font-size:.92rem;font-weight:700;color:#0a1628;margin-bottom:2px">${v.title||'Sans titre'}</div>
-        <div style="font-size:.76rem;color:rgba(6,14,28,.5);margin-bottom:10px">Par ${v.author||'?'} · ${v.subj||''}</div>
-        <div style="display:flex;gap:8px">
-          <button onclick="adminViewReports('${v.id}','${(v.title||'').replace(/'/g,'')}')" style="flex:1;background:rgba(53,175,235,.1);border:1px solid rgba(53,175,235,.25);border-radius:10px;padding:9px;font-size:.8rem;font-weight:700;color:#1d7fb8;cursor:pointer;font-family:inherit">👁 Voir motifs</button>
-          <button onclick="adminIgnoreReports('${v.id}')" style="flex:1;background:rgba(43,200,138,.1);border:1px solid rgba(43,200,138,.3);border-radius:10px;padding:9px;font-size:.8rem;font-weight:700;color:#0f9d6c;cursor:pointer;font-family:inherit">✓ Garder</button>
-          <button onclick="adminDeleteVid('${v.id}','${(v.title||'').replace(/'/g,'')}')" style="flex:1;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);border-radius:10px;padding:9px;font-size:.8rem;font-weight:700;color:#ef4444;cursor:pointer;font-family:inherit">🗑️ Supprimer</button>
-        </div>
-      </div>`;
-    }).join('');
-  });
-}
-
-async function adminViewReports(id,title){
-  const snap=await db.collection('reports').where('videoId','==',id).get();
-  const reasons=snap.docs.map(d=>d.data());
-  let msg='Motifs pour "'+title+'" :\n\n';
-  if(!reasons.length)msg+='(aucun détail)';
-  else reasons.forEach((r,i)=>{msg+=(i+1)+'. '+r.reason+' — '+(r.reporter||'?')+' ('+(r.reporterClass||'')+')\n';});
-  alert(msg);
-}
-
-async function adminIgnoreReports(id){
-  if(!confirm('Garder cette vidéo et effacer ses signalements ?'))return;
-  try{
-    await db.collection('videos').doc(id).update({reportCount:0});
-    const snap=await db.collection('reports').where('videoId','==',id).get();
-    await Promise.all(snap.docs.map(d=>d.ref.delete()));
-    toast('✓ Vidéo gardée, signalements effacés');
-  }catch(e){toast('Erreur','err');}
-}
-
-async function adminDeleteVid(id,title){
-  if(!user.admin){toast('Réservé aux admins 🔒','err');return;}
-  if(!confirm('Supprimer définitivement "'+(title||'cette vidéo')+'" ? Cette action est irréversible.'))return;
-  try{
-    await db.collection('videos').doc(id).delete();
-    const snap=await db.collection('reports').where('videoId','==',id).get();
-    await Promise.all(snap.docs.map(d=>d.ref.delete()));
-    toast('🗑️ Vidéo supprimée');
-  }catch(e){toast('Erreur suppression : '+e.message,'err');}
-}
-
-function shareWA(){
-  const t=document.getElementById('shareTitle').textContent;
-  const msg=encodeURIComponent('📚 Regarde "'+t+'" sur KRAK 2 !\n🔗 https://meek-trifle-c954d4.netlify.app');
-  window.open('https://wa.me/?text='+msg,'_blank');
-  closeM('m-share');toast('📱 Partagé sur WhatsApp !');
-}
-function shareSMS(){
-  const t=document.getElementById('shareTitle').textContent;
-  window.open('sms:?body='+encodeURIComponent('Regarde "'+t+'" sur KRAK 2 : https://meek-trifle-c954d4.netlify.app'),'_blank');
-  closeM('m-share');toast('💬 SMS ouvert !');
-}
-function copyLink(){
-  const url='https://meek-trifle-c954d4.netlify.app';
-  try{navigator.clipboard.writeText(url);}catch(e){}
-  closeM('m-share');toast('🔗 Lien copié !');
-}
-
-function toggleVidPlay(vid){
-  if(vid.paused){ vid.play(); lsfSyncVideo(false); }
-  else { vid.pause(); lsfSyncVideo(true); }
-}
-function toggleVidPlayParent(overlay){
-  const vid=overlay.previousElementSibling;
-  if(!vid||vid.tagName!=='VIDEO')return;
-  const pi=overlay.nextElementSibling;
-  if(vid.paused){
-    vid.play(); lsfSyncVideo(false);
-    if(pi){pi.style.opacity='0';}
-  }else{
-    vid.pause(); lsfSyncVideo(true);
-    if(pi){pi.style.opacity='1';setTimeout(()=>{if(pi)pi.style.opacity='0';},1200);}
-  }
-}
-function ttTab(mode){
-  ttMode=mode;
-  document.getElementById('ttForyou').classList.toggle('active',mode==='foryou');
-  document.getElementById('ttFollow').classList.toggle('active',mode==='follow');
-  renderVids('all');
-  toast(mode==='foryou'?'Pour toi 🔥':'Tes abonnements 👥');
-}
-function ttPlay(btn){
-  btn.textContent=btn.textContent==='▶'?'⏸':'▶';
-  btn.style.opacity=btn.textContent==='⏸'?'0':'1';
-  if(btn.textContent==='⏸')setTimeout(()=>{btn.style.opacity='0'},300);
-}
-function ttLike(btn){
-  const num=btn.querySelector('.tt-act-num');
-  const ico=btn.querySelector('.tt-act-ico');
-  if(btn.classList.contains('liked')){
-    btn.classList.remove('liked');ico.textContent='🤍';num.textContent=parseInt(num.textContent)-1;
-  }else{
-    btn.classList.add('liked');ico.textContent='💚';num.textContent=parseInt(num.textContent)+1;
-    toast('💚 Vidéo aimée !');
-  }
-}
-function shareVid(t){
-  window.open('https://wa.me/?text='+encodeURIComponent('Regarde cette vidéo éducative sur KRAK 2 : '+t+' 📚'),'_blank');
-}
-function filterVids(){}
-function filterSubj(){}
-function openVid(){}
-
-// ═══════════ COURS ═══════════
-function renderCours(cat){
-  const l=document.getElementById('cList');
-  l.innerHTML=(COURS[cat]||[]).map(c=>{
-    const isMaths3 = (cat==='3e' && c.t.indexOf('Maths')>=0);
-    const click = isMaths3 ? 'openMaths3()' : `toast('Cours ouvert : ${c.t} 📚')`;
-    return `<div class="ci" onclick="${click}">
-    <div class="ci-icon" style="background:${c.bg}">${c.i}</div>
-    <div class="ci-text"><strong>${c.t}</strong><span>${isMaths3?'14 leçons complètes — Appuie pour ouvrir':c.s}</span></div>
-    <span class="ci-badge" style="background:${c.bc};color:${c.bt}">${c.b}</span>
-  </div>`;}).join('');
-}
-
-const MATHS3_HTML=`<div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Calcul littéral</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 1 - Maths 3ème
-Quotients: a/b = c/d équivaut à ad = bc
-Développement:k(a+b) = ka + kb
-Identités remarquables:(a+b)² = a² + 2ab + b²(a-b)² = a² - 2ab + b²(a+b)(a-b) = a² - b²
-Factorisation: mettre en facteur communEx: 3x + 6 = 3(x+2)</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Propriétés de Thalès</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 2 - Maths 3ème
-Théorème de Thalès:Si (BC) parallèle à (MN) dans un triangle,alors AM/AB = AN/AC = MN/BC
-Application: calculer des longueurs inconnues
-Réciproque:si AM/AB = AN/AC alors BC parallèle MN</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Racines carrées</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 3 - Maths 3ème
-Racine carrée: racine(a) existe si a &gt;= 0
-(racine(a))² = aracine(a x b) = racine(a) x racine(b)racine(a/b) = racine(a) / racine(b)
-Ex: racine(36) = 6racine(2) ≈ 1,414
-Rationaliser: multiplier par le conjugué</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">4</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Triangle rectangle</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 4 - Maths 3ème
-Théorème de Pythagore:BC² = AB² + AC² (angle droit en A)
-Trigonométrie:cos = côté adjacent / hypoténusesin = côté opposé / hypoténusetan = côté opposé / côté adjacent
-Cercle circonscrit:Centre = milieu de l'hypoténuse</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">5</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Calcul numérique</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 5 - Maths 3ème
-Puissances:aⁿ x aᵐ = aⁿ⁺ᵐaⁿ / aᵐ = aⁿ⁻ᵐa⁰ = 1
-Notation scientifique: a x 10ⁿ (1 &lt;= a &lt; 10)
-PGCD: Plus Grand Commun Diviseur
-Fractions irréductibles:Diviser par le PGCD</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">6</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Vecteurs</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 6 - Maths 3ème
-Vecteur = direction + sens + norme
-Egalité: même direction, même sens, même norme
-Relation de Chasles:AB + BC = AC
-Vecteurs colinéaires:Même direction (ou opposée)
-Multiplication par un scalaire:k x AB = vecteur de même direction, norme k x ||AB||</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">8</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Equations et inéquations</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 8 - Maths 3ème
-Equation du 1er degré:ax + b = 0  =&gt;  x = -b/a
-Inéquation:ATTENTION: si on divise par un négatif,le sens de l'inégalité change!
-Equation produit:A x B = 0  =&gt;  A = 0  ou  B = 0
-Représentation sur une droite graduée</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">9</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Coordonnées d'un vecteur</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 9 - Maths 3ème
-Vecteur AB de coordonnées:(xB - xA  ;  yB - yA)
-Norme:||AB|| = racine((xB-xA)² + (yB-yA)²)
-Somme:(x ; y) + (x' ; y') = (x+x' ; y+y')
-Milieu de [AB]:((xA+xB)/2  ;  (yA+yB)/2)</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">10</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Equations de droites</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 10 - Maths 3ème
-Equation réduite: y = ax + ba = coefficient directeur (pente)b = ordonnée à l'origine
-Droites parallèles: même coefficient a
-Calcul de a:a = (yB - yA) / (xB - xA)
-Ex: A(1;2) et B(3;6)a = (6-2)/(3-1) = 4/2 = 2</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">11</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Statistique</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 11 - Maths 3ème
-Effectif: nombre de fois qu'une valeur apparaît
-Fréquence = effectif / effectif total
-Moyenne:= somme(valeur x effectif) / effectif total
-Mode = valeur la plus fréquente
-Diagrammes: bâtons, circulaire, histogramme</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">12</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Systèmes d'équations</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 12 - Maths 3ème
-Système de 2 équations à 2 inconnues:  ax + by = c  a'x + b'y = c'
-Méthode substitution:Exprimer x en fonction de ypuis remplacer dans la 2ème équation
-Méthode combinaison:Multiplier pour éliminer une inconnue</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">13</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Applications affines</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 13 - Maths 3ème
-Application affine: f(x) = ax + b
-Application linéaire: f(x) = ax(cas particulier où b = 0)
-a = taux d'accroissement
-Représentation graphique = droite
-f(x1) - f(x2) = a(x1 - x2)</div></div><div style="background:#f4f8fc;border:1px solid #dde8f0;border-radius:12px;overflow:hidden;margin-bottom:6px"><div onclick="var c=this.nextElementSibling;var open=c.style.display==='block';c.style.display=open?'none':'block';this.querySelector('span.arr').textContent=open?'▼':'▲';this.parentElement.style.borderColor=open?'#dde8f0':'#35afeb'" style="display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer"><b style="min-width:26px;height:26px;width:26px;border-radius:8px;background:linear-gradient(135deg,#35afeb,#52ec9b);color:#fff;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0">14</b><strong style="flex:1;font-size:.88rem;color:#0a1628">Pyramides et cônes</strong><span class="arr" style="color:#888;font-size:.8rem">▼</span></div><div style="display:none;padding:8px 14px 14px;font-size:.85rem;line-height:1.7;color:#1a2a44;white-space:pre-wrap;border-top:1px solid #dde8f0">Leçon 14 - Maths 3ème
-Pyramide:Volume = (1/3) x Aire base x hauteur
-Cône:Volume = (1/3) x pi x r² x hAire latérale = pi x r x génératrice
-Section par plan parallèle à la base:Réduction à l'échelle k:  Aires multipliées par k²  Volumes multipliés par k³</div></div>`;
-
-function openMaths3(){
-  document.getElementById('maths3Body').innerHTML=MATHS3_HTML;
-  openModal('m-maths3');
-}
-function setCat(el,cat){document.querySelectorAll('.ccat').forEach(c=>c.classList.remove('active'));el.classList.add('active');renderCours(cat);}
-
-// ═══════════ CALL ═══════════
 let callInt,callS=0,micOn=true,camOn=true;
 function launchCall(name){
   const room='krak2-'+name.toLowerCase().replace(/[^a-z0-9]/g,'-').replace(/-+/g,'-');
@@ -827,7 +409,7 @@ function launchCall(name){
   const isMobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   if(isMobile){
     window.open(url,'_blank');
-    toast('🎥 Jitsi ouvert ! Autorise caméra et micro');
+    toast('🎥 Jitsi ouvert !');
     return;
   }
   document.getElementById('callSubj').textContent=name;
@@ -841,746 +423,816 @@ function launchCall(name){
     document.getElementById('callTimer').textContent=
       String(Math.floor(callS/60)).padStart(2,'0')+':'+String(callS%60).padStart(2,'0');
   },1000);
-  toast('🎥 Appel lancé — copie le lien pour inviter !');
-}
-
-function joinByCode(){
-  const raw=document.getElementById('jitsiCode').value.trim();
-  if(!raw){toast('Entre un code de salle 📎','err');return;}
-  const room='krak2-'+raw.toLowerCase().replace(/[^a-z0-9]/g,'-').replace(/-+/g,'-');
-  const url='https://meet.jit.si/'+room;
-  window.open(url,'_blank');
-  toast('🎥 Salle "'+raw+'" ouverte ! Autorise caméra et micro');
-}
-
-function copyCallLink(){
-  const room=document.getElementById('callScreen').dataset.room||'krak2-general';
-  const link='https://meet.jit.si/'+room;
-  try{navigator.clipboard.writeText(link);}catch(e){}
-  toast('🔗 Lien copié ! Envoie-le à tes amis');
+  toast('🎥 Appel lancé !');
 }
 function endCall(){
   document.getElementById('callScreen').classList.remove('on');
   document.getElementById('jitsiFrame').src='';
   clearInterval(callInt);
-  toast('Session terminée · '+document.getElementById('callTimer').textContent);
+  toast('Session terminée');
 }
-function toggleCallMic(){micOn=!micOn;const b=document.getElementById('ccMic');b.textContent=micOn?'🎤':'🔇';b.style.background=micOn?'':'rgba(53,175,235,.25)';toast(micOn?'Micro activé 🎤':'Micro coupé 🔇');}
-function toggleCallCam(){camOn=!camOn;const b=document.getElementById('ccCam');b.textContent=camOn?'📹':'🚫';b.style.background=camOn?'':'rgba(53,175,235,.25)';toast(camOn?'Caméra activée 📹':'Caméra désactivée 🚫');}
-function toggleMic(){micOn=!micOn;document.getElementById('micBtn').style.background=micOn?'':'rgba(53,175,235,.2)';toast(micOn?'Micro activé 🎤':'Micro coupé 🔇');}
-function toggleCam2(){camOn=!camOn;document.getElementById('camBtn').style.background=camOn?'':'rgba(53,175,235,.2)';toast(camOn?'Caméra activée 📹':'Caméra désactivée 🚫');}
-function createSquad(){const n=document.getElementById('sName').value||'Nouveau Squad';closeM('m-squad');toast('Squad créé !');setTimeout(()=>launchCall(n),400);}
 
-// ═══════════ ECOSEARCH ═══════════
-function renderEcoDefault(){
-  const c=document.getElementById('ecoRes');
-  c.innerHTML=ECO_DB.default.map(r=>`<div class="er" onclick="toast('Source : ${r.u} 📖')"><div class="eu">${r.u} <span class="est">✓ Vérifié</span></div><div class="et">${r.t}</div><div class="ed">${r.d}</div></div>`).join('');
+// ═══════════ VIDEOS (KRAKMINUTE) ═══════════
+let curFilter='all',ttMode='foryou',vidUnsub=null;
+let allVidsCache=[];
+let likedVids={};
+try{likedVids=JSON.parse(localStorage.getItem('krakLikes')||'{}');}catch(e){}
+let _skipRebuild=false;
+let ttObserver=null;
+const TT_BG=['ttb1','ttb2','ttb3','ttb4','ttb5','ttb6'];
+
+function renderVids(f){
+  curFilter=f;
+  const feed=document.getElementById('ttFeed');
+  feed.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100vh;flex-direction:column;gap:16px;background:#000"><div class="ldots"><span></span><span></span><span></span></div></div>';
+  if(vidUnsub)vidUnsub();
+  vidUnsub=db.collection('videos').orderBy('createdAt','desc').limit(30)
+    .onSnapshot(snap=>{
+      const fbVids=snap.docs.map(d=>({id:d.id,...d.data(),isReal:true}));
+      const visibleFb = user.admin ? fbVids : fbVids.filter(v=>(v.reportCount||0)<REPORT_THRESHOLD);
+      allVidsCache=[...visibleFb];
+      if(typeof updateModFab === 'function') updateModFab(fbVids);
+      if(_skipRebuild){_skipRebuild=false;return;}
+      buildFeed(allVidsCache);
+    },()=>{allVidsCache=[];buildFeed(allVidsCache);});
 }
-function doEco(){
-  const raw=document.getElementById('ecoIn').value.trim().toLowerCase();
-  if(!raw){toast('Écris quelque chose 🔍','err');return;}
-  if(BLOCKED.some(w=>raw.includes(w))){
-    document.getElementById('ecoRes').innerHTML=`<div style="background:rgba(53,175,235,.08);border:1px solid rgba(53,175,235,.22);border-radius:12px;padding:16px;text-align:center"><div style="font-size:1.4rem;margin-bottom:7px">🚫</div><div style="font-size:.83rem;font-weight:700;color:var(--krak);margin-bottom:3px">Contenu bloqué</div><div style="font-size:.73rem;color:rgba(6,14,28,.45)">Ce contenu n'est pas autorisé. Essaie une question de cours.</div></div>`;
-    toast('Contenu bloqué par KRAK 2 🚫','err');return;
+
+function buildFeed(vids){
+  const feed=document.getElementById('ttFeed');
+  const savedScroll=feed.scrollTop;
+  if(!vids.length){
+    feed.innerHTML='<div style="color:rgba(255,255,255,.6);text-align:center;padding:20px;padding-top:50px">Aucune vidéo</div>';
+    return;
   }
-  let res=ECO_DB.default;
-  Object.keys(ECO_DB).forEach(k=>{if(k!=='default'&&raw.includes(k))res=ECO_DB[k];});
-  document.getElementById('ecoRes').innerHTML=res.map(r=>`<div class="er" onclick="toast('Source : ${r.u} 📖')"><div class="eu">${r.u} <span class="est">✓ Vérifié</span></div><div class="et">${r.t}</div><div class="ed">${r.d}</div></div>`).join('');
-  toast('Résultats pour "'+raw+'" 🔍');
-}
-
-// ═══════════ INTELLIGENCE ARTIFICIELLE KRAKI (FastAPI Secure) ═══════════
-
-// --- Base de données cours (KRAK) ---
-// (Les objets JSON KRAK_COURS_2NDE originaux de ton collègue sont conservés)
-// Afin d'alléger ce bloc de texte, je garde la fonction qui cherche le cours.
-function krakiNormalize(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s×]/g,' ');}
-
-function krakiFindLessons(question){
-  // Nous utilisons la base KRAK_COURS_2NDE existante de ton collègue
-  if(typeof KRAK_COURS_2NDE === 'undefined') return [];
-  const q=krakiNormalize(question);
-  const scored=[];
-  for(const L of KRAK_COURS_2NDE){
-    let score=0;
-    for(const kw of L.k){
-      const k=krakiNormalize(kw);
-      if(k && q.includes(k)) score += (k.length>6?3:2);
-    }
-    const tn=krakiNormalize(L.t);
-    for(const w of tn.split(/\s+/)) if(w.length>4 && q.includes(w)) score+=1;
-    if(score>0) scored.push({L,score});
-  }
-  scored.sort((a,b)=>b.score-a.score);
-  return scored.slice(0,2).map(x=>x.L);
-}
-
-function krakiBuildContext(question){
-  const matched=krakiFindLessons(question);
-  if(!matched.length) return '';
-  let ctx='\n\n═══ EXTRAITS DU COURS OFFICIEL 2nde C (Côte d\'Ivoire, méthode APC) — utilise-les comme référence exacte ═══\n';
-  for(const L of matched){ ctx+='\n📘 LEÇON '+L.n+' : '+L.t+'\n'+L.c+'\n'; }
-  return ctx;
-}
-
-const KRAKI_SYSTEM_GENIE = `Tu es KRAKI, le professeur particulier IA le plus brillant de Côte d'Ivoire, intégré à la plateforme éducative KRAK. Tu es un GÉNIE pédagogique de niveau lycée et au-delà (maths, PC, SVT, histoire-géo, français, philo, anglais).
-TON RÔLE :- Tu maîtrises PARFAITEMENT le programme ivoirien (méthode APC) de la 6e à la Terminale.- Tu expliques comme le meilleur prof du pays : clair, rigoureux, structuré, jamais ennuyeux.- Tu CORRIGES et TRAITES les devoirs et sujets complets : tu lis l'énoncé, tu résous chaque question dans l'ordre, avec toutes les étapes du raisonnement.
-TA MÉTHODE DE RÉPONSE (suis-la pour chaque exercice) :1. 🎯 CE QU'ON DEMANDE — reformule l'objectif en une phrase.2. 📚 LE COURS UTILE — rappelle la définition / propriété / formule exacte à appliquer.3. 📝 LA RÉSOLUTION — étape par étape, avec les calculs détaillés et justifiés (cite la règle utilisée à chaque étape).4. ✅ LE RÉSULTAT — encadre clairement la réponse finale.5. 💡 POUR RETENIR — un conseil ou une astuce mémo + l'erreur classique à éviter.
-TES RÈGLES D'OR :- Réponses RICHES et DÉVELOPPÉES : ne sois jamais avare en explications. Fais de vraies phrases complètes, développe ton raisonnement, donne des exemples concrets quand c'est utile.- Quand on te donne un sujet avec plusieurs exercices/questions, traite-les TOUS, un par un, sans en oublier.- Sois rigoureux mathématiquement : écris les formules proprement, vérifie tes calculs.- Sois encourageant et bienveillant : utilise des emojis (🎯 📚 📝 ✅ 💡 ⚠️ 🔢) pour structurer.- Réponds toujours en français clair.- Refuse poliment tout contenu non éducatif (paris, adulte).- Si un extrait de cours officiel t'est fourni ci-dessous, appuie-toi dessus en priorité pour répondre.`;
-
-let chatUnsubscribe = null;
-let currentSearchChannelId = "salon_krak_search_" + Date.now();
-let krakiCourseFile = null; 
-
-// --- Gestion des Documents Globaux (Le bouton "Charger un cours") ---
-function krakiLoadCourse(input){
-  const file=input.files[0]; if(!file) return;
-  input.value='';
-  krakiCourseFile = file; // On garde le fichier pour l'envoyer au serveur Python
   
-  const badge=document.getElementById('krakiCourseBadge');
-  const badgeName=document.getElementById('krakiCourseNameBadge');
-  badge.style.display='flex';
-  badgeName.textContent='📚 '+file.name+' — prêt';
-  toast('✅ Cours chargé ! Pose tes questions maintenant.');
+  feed.innerHTML=vids.map((v,i)=>{
+    const vid=v.id||('demo'+i);
+    return `
+    <div class="tt-vid" data-id="${v.id||''}" data-lsf="${v.lsfUrl||''}">
+      ${v.isReal&&v.url
+        ?`<video class="tt-real-vid" src="${v.url}" loop playsinline webkit-playsinline
+            style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1"
+            onclick="toggleVidPlay(this)"></video>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,transparent 30%,transparent 50%,rgba(0,0,0,.85) 100%);z-index:2" onclick="toggleVidPlayParent(this)"></div>`
+        :`<div class="tt-bg ${TT_BG[i%6]}">${v.e||'🎬'}</div>`
+      }
+      <div class="tt-progress" style="z-index:6"><div class="tt-progress-bar"></div></div>
+      <div class="tt-info" style="z-index:5">
+        <span class="tt-tag">${v.subj||v.s||'Éducatif'}</span>
+        <div class="tt-author">@${(v.author||v.a||'krak').toLowerCase().replace(/\s/g,'')} <span class="tt-verified">✓</span></div>
+        <div class="tt-title">${v.title||v.t||''}</div>
+      </div>
+      <div class="tt-actions" style="z-index:5">
+        <div class="tt-avatar" onclick="openCreatorProfile('${(v.author||v.a||'KRAK').replace(/'/g,'')}')">${(v.author||v.a||'K').charAt(0).toUpperCase()}<span class="plus">+</span></div>
+        <button class="tt-act" onclick="likeVid(this,'${vid}')">
+          <span class="tt-act-ico" style="background:none">🤍</span>
+          <span class="tt-act-num">${v.likes||v.lk||0}</span>
+        </button>
+      </div>
+    </div>`;
+  }).join('');
   
-  const w=document.getElementById('ksWelcome'); if(w)w.style.display='none';
-  ksAddMsg("📚 J'ai chargé : <b>"+file.name+"</b><br>Pose-moi n'importe quelle question sur ce cours, ou demande-moi de corriger les exercices !", 'ai');
-}
-
-function krakiClearCourse(){
-  krakiCourseFile=null;
-  document.getElementById('krakiCourseBadge').style.display='none';
-  toast('Cours retiré');
-}
-
-// --- 1. L'ÉCOUTEUR TEMPS RÉEL FIRESTORE ---
-function listenToAiTeacher(channelId, boxId, useKsFormat = false) {
-    const box = document.getElementById(boxId);
-    if (!box) return;
-
-    if (chatUnsubscribe) chatUnsubscribe(); 
-    let isFirstSnapshot = true; 
-
-    chatUnsubscribe = db.collection("channels").doc(channelId).collection("messages")
-        .orderBy("timestamp", "asc")
-        .onSnapshot((snap) => {
-            if (snap.empty) { isFirstSnapshot = false; return; }
-
-            if (isFirstSnapshot) { box.innerHTML = ''; }
-            if (useKsFormat && document.getElementById('ksWelcome')) {
-                document.getElementById('ksWelcome').style.display = 'none';
-            }
-
-            snap.docChanges().forEach((change) => {
-                if (change.type === "added") {
-                    const msg = change.doc.data();
-                    const docId = change.doc.id;
-                    const isAi = msg.senderId === "ai_teacher_bot";
-                    const type = isAi ? (useKsFormat ? 'ai' : 'bot') : 'user';
-                    
-                    // ✨ NOUVEAU : On fusionne le texte et l'image
-                    let finalHtml = msg.text || msg.concept || '';
-                    
-                    // 🛡️ On vérifie si on a l'image en mémoire vive locale (pour contourner le blocage Firestore)
-                    let displayUrl = msg.fileUrl;
-                    if (!displayUrl && window.localKrakImages && window.localKrakImages[docId]) {
-                        displayUrl = window.localKrakImages[docId];
-                    }
-
-                    if (displayUrl) {
-                        // On ajoute "blob:" pour détecter les images stockées en mémoire vive
-                        const isImage = displayUrl.match(/\.(jpeg|jpg|gif|png|webp)$/i) != null || displayUrl.startsWith('data:image') || displayUrl.startsWith('blob:');
-                        
-                        if (isImage) {
-                            // Affichage de la miniature de l'image
-                            finalHtml = `<div style="margin-bottom:8px;"><img src="${displayUrl}" style="max-width:200px;max-height:140px;border-radius:8px;display:block;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>` + finalHtml;
-                        } else {
-                            // Affichage si c'est un PDF ou autre document
-                            finalHtml = `<div style="margin-bottom:8px; font-size:0.8rem; background:rgba(0,0,0,0.1); padding:6px 10px; border-radius:6px; display:inline-block;">📎 <b>Document joint</b></div><br>` + finalHtml;
-                        }
-                    }
-
-                    // Affichage selon que ce soit l'IA (machine à écrire) ou l'élève
-                    if (isAi && !isFirstSnapshot) {
-                        const thinkingElement = document.getElementById('aiThinking');
-                        if (thinkingElement) thinkingElement.remove();
-
-                        const msgId = 'msg-' + docId;
-                        if (useKsFormat) ksAddMsg('', type, msgId);
-                        else addMsg(boxId, '', type, msgId);
-                        
-                        streamText(msgId, finalHtml, box);
-                    } else {
-                        // Affichage direct (Tes messages ou chargement de l'historique)
-                        if (useKsFormat) ksAddMsg(finalHtml, type);
-                        else addMsg(boxId, finalHtml, type);
-                        
-                        // ✨ ÉTAPE 3 : On force la traduction mathématique immédiate
-                        // On met un petit délai de 50ms pour laisser le temps au HTML de s'afficher d'abord
-                        setTimeout(() => {
-                            if (window.MathJax) {
-                                MathJax.typesetPromise().catch(err => console.log('Erreur MathJax:', err));
-                            }
-                        }, 50);
-                    }
-                }
-            });
-
-            // Gestion de la bulle d'attente ("KRAKI réfléchit...")
-            const docs = snap.docs;
-            const lastDoc = docs[docs.length - 1].data();
-            const lastMsgWasUser = (lastDoc.senderId !== "ai_teacher_bot");
-
-            if (lastMsgWasUser && !document.getElementById('aiThinking')) {
-                const thinkingHtml = `
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                        <div class="ldots" style="transform: scale(0.65); transform-origin: center; margin: 0;">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <span style="font-size: 0.75rem; color: rgba(6,14,28,0.5); font-style: italic; font-weight: 600;">
-                            KRAKI réfléchit...
-                        </span>
-                    </div>`;
-                
-                if (useKsFormat) ksAddMsg(thinkingHtml, 'ai', 'aiThinking');
-                else addMsg(boxId, thinkingHtml, 'bot', 'aiThinking');
-            } 
-            else if (!lastMsgWasUser) {
-                const thinkingElement = document.getElementById('aiThinking');
-                if (thinkingElement) thinkingElement.remove();
-            }
-
-            box.scrollTop = box.scrollHeight;
-            isFirstSnapshot = false; 
-        });
-}
-
-// --- 2. FONCTION MACHINE À ÉCRIRE (STREAMING TEXT) ---
-function streamText(containerId, fullText, scrollBox) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    
-    // On cible l'intérieur de la bulle
-    const textNode = container.querySelector('.ks-ai-bubble') || container;
-    textNode.innerHTML = ''; 
-    
-    let i = 0;
-    const speed = 12; // Vitesse d'écriture
-    
-    function typeWriter() {
-        if (i < fullText.length) {
-            let char = fullText.charAt(i);
-            
-            if (char === '\n') {
-                textNode.innerHTML += textNode.classList.contains('ks-ai-bubble') ? '\n' : '<br>';
-            } else {
-                textNode.innerHTML += char;
-            }
-            
-            i++;
-            scrollBox.scrollTop = scrollBox.scrollHeight;
-            setTimeout(typeWriter, speed);
-        } else {
-            // ✨ MAGIE MATHÉMATIQUE : L'IA a fini d'écrire, on lance la traduction des symboles !
-            if (window.MathJax) {
-                MathJax.typesetPromise([textNode]).catch(function (err) {
-                    console.error('Erreur de rendu mathématique :', err.message);
-                });
-            }
+  setTimeout(()=>{
+    if(ttObserver)ttObserver.disconnect();
+    ttObserver=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        const vid=e.target.querySelector('.tt-real-vid');
+        if(e.isIntersecting){
+          pauseAllFeedVideos(vid);
+          if(vid) vid.play().catch(()=>{});
+        }else{
+          if(vid) vid.pause();
         }
-    }
-    
-    typeWriter();
+      });
+    },{threshold:.6});
+    feed.querySelectorAll('.tt-vid').forEach(s=>ttObserver.observe(s));
+    if(savedScroll>0)feed.scrollTop=savedScroll;
+  },200);
 }
 
-function addMsg(cid,text,type,id=''){
-  const c=document.getElementById(cid);
-  const div=document.createElement('div');
-  div.className=type==='user'?'mu':'mb';
-  div.innerHTML=text.replace(/\n/g,'<br>');
-  if(id)div.id=id;
-  c.appendChild(div);c.scrollTop=c.scrollHeight;
+function pauseAllFeedVideos(except){
+  document.querySelectorAll('#ttFeed .tt-real-vid').forEach(v=>{
+    if(v!==except){ try{ v.pause(); }catch(e){} }
+  });
+}
+function toggleVidPlay(vid){
+  if(vid.paused) vid.play(); else vid.pause();
+}
+function toggleVidPlayParent(overlay){
+  const vid=overlay.previousElementSibling;
+  if(vid && vid.tagName==='VIDEO') toggleVidPlay(vid);
 }
 
-function ksAddMsg(text,type,id=''){
-  const c=document.getElementById('ecoMsgs');
-  const div=document.createElement('div');
-  if(type==='user'){
-    div.className='ks-msg-user';
-    div.innerHTML=text.replace(/\n/g,'<br>');
+// ═══════════ DEVOIRS & COURS ═══════════
+function renderCours(cat){
+  const l=document.getElementById('cList');
+  if(!l)return;
+  l.innerHTML=(COURS[cat]||[]).map(c=>`
+    <div class="ci" onclick="toast('Cours ouvert : ${c.t} 📚')">
+      <div class="ci-icon" style="background:${c.bg}">${c.i}</div>
+      <div class="ci-text"><strong>${c.t}</strong><span>${c.s}</span></div>
+      <span class="ci-badge" style="background:${c.bc};color:${c.bt}">${c.b}</span>
+    </div>`
+  ).join('');
+}
+
+function loadDevoirs(){
+  const isAdmin = (user.admin === true);
+  db.collection('devoirs').orderBy('createdAt','desc').limit(20)
+    .onSnapshot(snap=>{
+      const list=document.getElementById('dvList');
+      if(snap.empty)return;
+      const existing=list.querySelectorAll('.dvc[data-fb]');
+      existing.forEach(e=>e.remove());
+      snap.docs.reverse().forEach(d=>{
+        const v=d.data();
+        const card=document.createElement('div');
+        card.className='dvc'; card.setAttribute('data-fb','1'); card.setAttribute('data-id',d.id);
+        card.onclick=()=>{ if(v.fileUrl) window.open(v.fileUrl, '_blank'); };
+        card.innerHTML=`
+          <div class="dv-top">
+            <div class="dva" style="background:linear-gradient(135deg,#35afeb,#52ec9b);color:#06121f">${v.initials||'?'}</div>
+            <div class="dv-inf"><strong>${v.author||'?'}</strong><span>${v.classe||''}</span></div>
+          </div>
+          <div class="dv-title">${v.title}</div>
+          <div class="dv-prev">${v.fileName?'📎 '+v.fileName:'Déposé sur KRAK'}</div>
+        `;
+        list.insertBefore(card,list.firstChild);
+      });
+    },()=>{});
+}
+
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// 🧠 KRAKI CORE V3 - INTÉGRATION SÉCURISÉE RENDER (Prof Virtuel)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const RENDER_BACKEND_URL = "http://127.0.0.1:8000"; 
+
+let ecoConv = [];
+let currentKrakiConvId = null;
+
+// Gère l'historique local pour l'UI
+function saveKrakiHistory(){
+  localStorage.setItem('krakiHistory', JSON.stringify(ecoConv));
+  if(typeof renderKrakiConversations==='function') renderKrakiConversations();
+}
+function autosaveKrakiConv(){
+  if(!ecoConv||ecoConv.length===0)return;
+  const convs=JSON.parse(localStorage.getItem('krakiConversations')||'[]');
+  const firstUser=ecoConv.find(m=>m.role==='user');
+  let title=firstUser ? firstUser.content.substring(0, 40)+'...' : 'Conversation';
+  
+  if(!currentKrakiConvId) currentKrakiConvId='c'+Date.now();
+  const idx=convs.findIndex(c=>c.id===currentKrakiConvId);
+  
+  if(idx!==-1){
+    convs[idx].messages=JSON.parse(JSON.stringify(ecoConv));
+    const cur=convs.splice(idx,1)[0];
+    convs.unshift(cur);
   }else{
-    div.className='ks-msg-ai';
-    div.innerHTML='<div class="ks-ai-avatar"><img src="'+ICONS.krakmin+'"></div><div class="ks-ai-bubble">'+text+'</div>';
+    convs.unshift({id:currentKrakiConvId, title:title, messages:JSON.parse(JSON.stringify(ecoConv)), date:new Date().toISOString()});
   }
-  if(id)div.id=id;
-  c.appendChild(div);c.scrollTop=c.scrollHeight;
+  if(convs.length>30) convs.pop();
+  localStorage.setItem('krakiConversations',JSON.stringify(convs));
 }
 
-// --- Menu UI KRAK Search ---
-function ksShowPhotoChoice(){
-  var c=document.getElementById('ksPhotoChoice');
-  c.style.display=c.style.display==='none'?'block':'none';
-}
-function ksHideChoice(){
-  document.getElementById('ksPhotoChoice').style.display='none';
-}
-function ksQuick(q){
-  document.getElementById('ecoAiIn').value=q;
-  sendEcoAI();
-}
-
-function newKsearchChat(){
-  currentSearchChannelId = "salon_krak_search_" + Date.now();
-  const c=document.getElementById('ecoMsgs');
-  c.innerHTML=`<div class="ks-welcome" id="ksWelcome">
-    <div class="ks-welcome-icon"><img src="${ICONS.krakmin}" style="width:56px;height:56px;object-fit:contain"></div>
-    <h2 class="ks-welcome-title">Comment puis-je t'aider aujourd'hui ?</h2>
-    <p class="ks-welcome-sub">Pose-moi une question de cours, demande une explication, ou fais corriger un exercice 📚</p>
-    <div class="ks-suggestions">
-      <button class="ks-sugg" onclick="ksQuick('Explique-moi les nombres complexes')">🧮 Les nombres complexes</button>
-      <button class="ks-sugg" onclick="ksQuick('Comment fonctionne la photosynthèse ?')">🌱 La photosynthèse</button>
-      <button class="ks-sugg" onclick="ksQuick('Aide-moi pour une dissertation de philo')">✍️ Dissertation de philo</button>
-      <button class="ks-sugg" onclick="ksQuick('Explique le théorème de Pythagore')">📐 Théorème de Pythagore</button>
-    </div>
-  </div>`;
-  listenToAiTeacher(currentSearchChannelId, "ecoMsgs", true);
-  toast('Nouvelle conversation 💬');
-}
-
-// --- ROUTAGE VERS FASTAPI (Ton backend puissant) ---
-async function processAiRequest(fileToProcess, textQuery, targetChannelId) {
-    try {
-        const currentUser = firebase.auth().currentUser;
-        if (!currentUser) throw new Error("Non connecté");
-        const token = await currentUser.getIdToken();
-
-        let fileUrl = null;
-        let fileExt = null;
-
-        // 1. UPLOAD DU FICHIER VIA NOTRE PROXY FASTAPI
-        if (fileToProcess) {
-            const formData = new FormData();
-            formData.append("file", fileToProcess);
-
-            const uploadRes = await fetch("https://prof-virtuel-backend.onrender.com/api/upload", {
-                method: "POST",
-                headers: { "Authorization": `Bearer ${token}` },
-                body: formData
-            });
-            
-            if (!uploadRes.ok) throw new Error("Échec du serveur local");
-            const uploadData = await uploadRes.json();
-            if (uploadData.status === "error") throw new Error(uploadData.message);
-
-            fileUrl = uploadData.file_url;
-            fileExt = fileToProcess.name.split('.').pop().toLowerCase();
-        }
-
-        // 2. CRÉATION DU SALON FIRESTORE
-        const channelRef = db.collection("channels").doc(targetChannelId);
-        const channelDoc = await channelRef.get();
-        if (!channelDoc.exists) {
-            const titleStr = textQuery ? textQuery : `Analyse de Document`;
-            await channelRef.set({
-                userId: currentUser.uid,
-                title: titleStr.length > 35 ? titleStr.substring(0, 35) + "..." : titleStr,
-                timestamp: firebase.firestore.FieldValue.serverTimestamp()
-            });
-        }
-
-        // 3. SAUVEGARDE DU MESSAGE ÉLÈVE (AVEC ASTUCE MÉMOIRE VIVE)
-        const finalQuestion = textQuery || "Peux-tu analyser ce document pour moi ?";
-        
-        // ✨ CORRECTION MAGIQUE : On génère la "boîte" (l'ID) AVANT de l'envoyer
-        const newMessageRef = channelRef.collection("messages").doc();
-        
-        // On y accroche l'image en mémoire vive immédiatement pour cet ID précis
-        if (fileToProcess && fileToProcess.type.startsWith('image/')) {
-            window.localKrakImages = window.localKrakImages || {};
-            window.localKrakImages[newMessageRef.id] = URL.createObjectURL(fileToProcess);
-        }
-
-        // Seulement maintenant, on sauvegarde dans Firestore
-        await newMessageRef.set({
-            senderId: currentUser.uid,
-            senderName: user.n || "Élève",
-            text: finalQuestion,
-            fileUrl: (fileUrl && fileUrl.startsWith('data:')) ? null : fileUrl, 
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            status: "sent"
-        });
-
-        // 4. APPEL À TON API FASTAPI MULTIMODALE
-        const contextData = krakiBuildContext(finalQuestion);
-        const enrichedPrompt = contextData ? KRAKI_SYSTEM_GENIE + contextData + "\n\nRequête de l'élève: " + finalQuestion : finalQuestion;
-
-        const res = await fetch("https://prof-virtuel-backend.onrender.com/api/explain", {
-            method: "POST",
-            headers: { "Content-Type": "application/json", "Authorization": `Bearer ${token}` },
-            body: JSON.stringify({ 
-                concept: enrichedPrompt, 
-                channel_id: targetChannelId,
-                file_url: fileUrl,      
-                file_type: fileExt      
-            })
-        });
-        
-        if (!res.ok) throw new Error("Erreur serveur API Explain");
-    } catch (e) {
-        console.error("ERREUR DÉTECTÉE :", e);
-        throw e; 
+// Charge l'historique de la conversation active depuis la mémoire du navigateur
+function loadKrakiHistory(){
+  const saved = localStorage.getItem('krakiHistory');
+  if(saved){
+    try{
+      ecoConv = JSON.parse(saved);
+      const c = document.getElementById('ecoMsgs');
+      if (c) c.innerHTML = '';
+      ecoConv.forEach(msg => {
+        ksAddMsg(msg.content, msg.role === 'user' ? 'user' : 'ai');
+      });
+    } catch(e) {
+      ecoConv = [];
     }
+  }
 }
 
-// Variable globale pour stocker le fichier en attente (Staging)
-let stagedSearchFile = null;
-
-// Action B : Mise en attente de l'image/doc (Au lieu d'envoyer directement)
-function ksAnalyzePhoto(input) {
-    const file = input.files[0];
-    if (!file) return;
-
-    // Cacher le petit menu de choix s'il est ouvert
-    if (typeof ksHideChoice === 'function') ksHideChoice();
-
-    // 1. Stocker le fichier en mémoire
-    stagedSearchFile = file;
-
-    // 2. Créer une prévisualisation visuelle au-dessus du champ de texte
-    let previewContainer = document.getElementById('stagedFilePreview');
-    if (!previewContainer) {
-        previewContainer = document.createElement('div');
-        previewContainer.id = 'stagedFilePreview';
-        // Style de la boîte de prévisualisation
-        previewContainer.style.cssText = "padding: 8px 12px; background: rgba(53,175,235,0.1); border: 1px solid rgba(53,175,235,0.3); border-radius: 8px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; font-size: 0.85rem; color: var(--ink);";
-        
-        // Insertion juste avant le champ de texte (ecoAiIn)
-        const inputField = document.getElementById('ecoAiIn');
-        inputField.parentNode.insertBefore(previewContainer, inputField);
+// Permet d'ouvrir/fermer la barre latérale KRAKI
+function toggleKrakiSidebar() {
+  const page = document.getElementById('page-ecosearch');
+  const overlay = document.getElementById('krakiOverlay');
+  if (!page) return;
+  
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    const open = page.classList.toggle('sidebar-open');
+    if (overlay) {
+      if (open) {
+        overlay.style.display = 'block';
+        setTimeout(() => overlay.style.opacity = '1', 0);
+      } else {
+        overlay.style.opacity = '0';
+        overlay.style.display = 'none';
+      }
     }
+  } else {
+    // Mode desktop : replier/déplier
+    page.classList.toggle('sidebar-collapsed');
+  }
+}
 
-    const isImage = file.type.startsWith('image/');
-    const icon = isImage ? '🖼️' : '📎';
+// ── GESTION DE L'HISTORIQUE DANS LA BARRE LATÉRALE ──
+
+// 1. Affiche la liste des conversations sauvegardées
+function renderKrakiConversations() {
+  const convs = JSON.parse(localStorage.getItem('krakiConversations') || '[]');
+  const list = document.getElementById('krakiConversationsList');
+  if (!list) return;
+  
+  list.innerHTML = '';
+  convs.forEach((conv, idx) => {
+    const item = document.createElement('div');
+    item.className = 'kraki-conversation-item';
+    item.onclick = () => loadKrakiConversation(idx);
     
-    // Remplir la boîte avec le nom du fichier et un bouton (X) pour annuler
-    previewContainer.innerHTML = `
-        <div style="display: flex; align-items: center; gap: 8px; overflow: hidden;">
-            <span style="font-size: 1.2rem;">${icon}</span>
-            <strong style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">${file.name}</strong>
-        </div>
-        <button onclick="ksClearStagedFile()" style="background: none; border: none; cursor: pointer; color: #ef4444; font-weight: bold; font-size: 1.2rem; padding: 0 5px;" title="Retirer le fichier">&times;</button>
+    // Structure de l'élément dans la liste
+    item.innerHTML = `
+      <span class="kraki-conversation-title">${conv.title || 'Conversation'}</span>
+      <button class="kraki-conversation-delete" onclick="event.stopPropagation(); deleteKrakiConversation(${idx})">🗑️</button>
     `;
-    previewContainer.style.display = 'flex';
-    
-    // 3. Focus automatique sur le champ de texte pour taper la question
-    document.getElementById('ecoAiIn').focus();
+    list.appendChild(item);
+  });
 }
 
-// Fonction pour retirer le fichier en attente
-function ksClearStagedFile() {
-    stagedSearchFile = null;
-    const preview = document.getElementById('stagedFilePreview');
-    if (preview) preview.style.display = 'none';
-    
-    // Réinitialiser les inputs file pour pouvoir resélectionner le même fichier
-    const fileInputs = document.querySelectorAll('input[type="file"]');
-    fileInputs.forEach(inp => inp.value = '');
-}
-
-// Action A : Envoi groupé (Texte + Fichier en attente)
-async function sendEcoAI() {
-    const inp = document.getElementById('ecoAiIn');
-    const q = inp.value.trim();
-    
-    // Sécurité : On bloque si tout est vide
-    if (!q && !stagedSearchFile && !krakiCourseFile) return;
-    
-    inp.value = '';
-    const w = document.getElementById('ksWelcome'); if (w) w.style.display = 'none';
-
-    // Le fichier à envoyer
-    const fileToSend = stagedSearchFile || krakiCourseFile;
-    
-    // On nettoie la zone de préparation visuelle
-    ksClearStagedFile();
-    
-    // Petit message pour faire patienter pendant l'upload
-    if (fileToSend) toast("Envoi du document en cours... ⏳");
-
-    // --- ENVOI AU SERVEUR FASTAPI ---
-    try {
-        await processAiRequest(fileToSend, q, currentSearchChannelId);
-    } catch (e) {
-        ksAddMsg('Désolé, impossible de joindre le serveur KRAK local. Lance Uvicorn ! 📡', 'ai');
-    }
-}
-
-// Action C : L'outil "Analyse Photo" grand format dans l'onglet Devoirs
-async function analyzePhoto(input){
-    const file=input.files[0];
-    if(!file)return;
-    const result=document.getElementById('pcResult');
-    const zone=document.getElementById('pcZoneContent');
-    
-    const reader=new FileReader();
-    reader.onload=async function(e){
-        const dataUrl=e.target.result;
-        result.style.display='block';
-        // On prépare une zone de texte spécifique pour la machine à écrire
-        result.innerHTML='<img class="pcr-img" src="'+dataUrl+'"><div class="pcr-title">🤖 KRAKI analyse ton devoir...</div><div id="pcAiText" style="padding-top:10px; font-size:0.9rem; line-height:1.6; color:#1a2a44;"></div>';
-        zone.innerHTML='<div style="font-size:1.4rem">✅</div><div style="font-size:.82rem;font-weight:700;color:var(--paper)">Photo reçue ! Reprendre une autre</div>';
-        result.scrollIntoView({behavior:'smooth',block:'nearest'});
-
-        try {
-            // Création d'un canal temporaire propre à cette analyse
-            const tempChannelId = "salon_photo_" + Date.now();
-            listenToAiTeacher(tempChannelId, "pcAiText", false);
-
-            await processAiRequest(file, "Analyse cette photo de devoir/exercice et corrige TOUT, question par question, en suivant ta méthode complète.", tempChannelId);
-        } catch (err) {
-            document.getElementById('pcAiText').innerHTML = "<b>Erreur de connexion au serveur local KRAK.</b>";
-        }
-    };
-    reader.readAsDataURL(file);
-}
-
-// Action D : Question depuis l'onglet Devoir
-async function sendAsk() {
-    const inp = document.getElementById('askIn');
-    const q = inp.value.trim();
-    if (!q) return;
-    inp.value = '';
-
-    try {
-        await processAiRequest(null, q, "salon_devoirs");
-    } catch (e) {
-        addMsg('askMsgs', 'L\'IA est indisponible. Lance Uvicorn ! 📡', 'bot');
-    }
-}
-
-// --- HISTORIQUE DES DISCUSSIONS (BARRE LATÉRALE - Ton code 1) ---
-async function toggleKsSidebar() {
-    const sidebar = document.getElementById('ksSidebar');
-    const overlay = document.getElementById('ksSidebarOverlay');
-    
-    if (!sidebar || !overlay) return; // Sécurité anti-crash si le HTML est absent
-
-    if (sidebar.classList.contains('open')) {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('open');
-        return;
+// 2. Charge une ancienne conversation quand on clique dessus
+function loadKrakiConversation(idx) {
+  const convs = JSON.parse(localStorage.getItem('krakiConversations') || '[]');
+  if (convs[idx]) {
+    // Sauvegarde la conversation en cours avant de changer
+    if (ecoConv && ecoConv.length > 0 && (!currentKrakiConvId || currentKrakiConvId !== convs[idx].id)) {
+      autosaveKrakiConv();
     }
     
-    sidebar.classList.add('open');
-    overlay.classList.add('open');
+    // Charge les messages
+    ecoConv = JSON.parse(JSON.stringify(convs[idx].messages));
+    currentKrakiConvId = convs[idx].id || null;
     
-    const list = document.getElementById('historyList');
-    list.innerHTML = '<div class="ldots" style="justify-content:center;padding:20px"><span></span><span></span><span></span></div>';
-
-    // 🛡️ L'IA PATIENTE JUSQU'AU RÉVEIL DE FIREBASE AUTH
-    let currentUser = firebase.auth().currentUser;
-    if (!currentUser) {
-        await new Promise(resolve => {
-            const unsub = firebase.auth().onAuthStateChanged(user => {
-                currentUser = user;
-                unsub(); // On se désabonne immédiatement après le premier check
-                resolve();
-            });
-        });
-    }
-
-    // Si on n'est vraiment pas connecté
-    if (!currentUser) {
-        list.innerHTML = '<div style="text-align:center;color:rgba(6,14,28,.4);padding:20px;font-size:.85rem;">Utilisateur non connecté.</div>';
-        return;
-    }
-
-    try {
-        const snap = await db.collection("channels").where("userId", "==", currentUser.uid).get();
-
-        if (snap.empty) {
-            list.innerHTML = '<div style="text-align:center;color:rgba(6,14,28,.4);padding:20px;font-size:.85rem;line-height:1.5;">Aucun historique trouvé.<br>Pose ta première question !</div>';
-            return;
-        }
-
-        let chats = [];
-        snap.forEach(doc => chats.push({ id: doc.id, ...doc.data() }));
-        
-        // Tri du plus récent au plus ancien
-        chats.sort((a, b) => (b.timestamp?.toMillis() || 0) - (a.timestamp?.toMillis() || 0));
-
-        list.innerHTML = chats.map(c => `
-            <div class="er" style="margin-bottom:8px; padding:12px; display:flex; align-items:center; gap:12px; background:var(--glass2); border:1px solid var(--border); border-radius:14px; cursor:pointer; position:relative;" onclick="resumeChat('${c.id}')">
-                <div style="font-size:1.1rem; background:rgba(53,175,235,.1); width:36px; height:36px; display:flex; align-items:center; justify-content:center; border-radius:10px; flex-shrink:0;">💬</div>
-                <div style="overflow:hidden; flex:1;">
-                    <div style="font-weight:700; font-size:.82rem; color:var(--paper); margin-bottom:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${c.title || 'Discussion KRAK'}</div>
-                    <div style="font-size:.65rem; color:rgba(6,14,28,.4)">Reprendre l'explication</div>
-                </div>
-                <button onclick="deleteChat('${c.id}', event)" title="Supprimer cette discussion" style="background:rgba(255, 77, 77, 0.1); color:#ff4d4d; border:none; width:32px; height:32px; border-radius:8px; display:flex; align-items:center; justify-content:center; cursor:pointer; flex-shrink:0; font-size:1rem; transition:transform 0.2s;">
-                    🗑️
-                </button>
-            </div>
-        `).join('');
-    } catch (e) {
-        console.error("Erreur historique:", e);
-        list.innerHTML = '<div style="text-align:center;color:#ef4444;padding:20px;font-size:.85rem">Erreur de chargement. Vérifie ta connexion.</div>';
-    }
-}
-
-function resumeChat(chatId) {
-    currentSearchChannelId = chatId; 
-    toggleKsSidebar(); 
-    listenToAiTeacher(currentSearchChannelId, "ecoMsgs", true); 
-}
-
-async function deleteChat(chatId, event) {
-    event.stopPropagation(); 
-    const confirmDelete = confirm("Es-tu sûr de vouloir supprimer cette discussion ?");
-    if (!confirmDelete) return;
-
-    try {
-        await db.collection("channels").doc(chatId).delete();
-        toast('🗑️ Discussion effacée !');
-        
-        const sidebar = document.getElementById('ksSidebar');
-        if (sidebar.classList.contains('open')) {
-            sidebar.classList.remove('open'); 
-            toggleKsSidebar();
-        }
-        
-        if (currentSearchChannelId === chatId) {
-            newKsearchChat(); 
-        }
-    } catch (e) {
-        toast('Erreur de suppression ⚠️', 'err');
-    }
-}
-
-// ═══════════ UPLOAD VIDEO (ET LSF) ═══════════
-function previewLsf(input){
-  const file=input.files[0];if(!file)return;
-  pendingLsfFile=file;
-  pendingLsfUrl=URL.createObjectURL(file);
-  const p=document.getElementById('lsfPreviewPlayer');
-  p.src=pendingLsfUrl;p.style.display='block';
-  document.getElementById('lsfZoneText').textContent='✅ Vidéo LSF ajoutée';
-  document.getElementById('lsfZone').style.borderColor='rgba(43,200,138,.6)';
-  document.getElementById('lsfZone').style.background='rgba(43,200,138,.06)';
-  toast('🤟 Vidéo LSF prête !');
-}
-
-async function postVid(){
-  if(!pendingVidFile){toast('Sélectionne une vidéo d\'abord 📱','err');return;}
-  const title=document.getElementById('vidTitle').value||'Ma vidéo éducative';
-  const subj=document.getElementById('vidSubject').value;
-  const btn=document.getElementById('postVidBtn');
-  btn.textContent='⏳ Publication en cours...';btn.disabled=true;
-  toast('Upload en cours... ⏳');
-  try{
-    const formData=new FormData();
-    formData.append('file',pendingVidFile);
-    formData.append('upload_preset','ml_default');
-    formData.append('cloud_name','dhtkpqkm9');
-    const cloudRes=await fetch('https://api.cloudinary.com/v1_1/dhtkpqkm9/video/upload',{method:'POST',body:formData});
-    const cloudData=await cloudRes.json();
-    const url=cloudData.secure_url;
-    if(!url)throw new Error('Upload Cloudinary échoué');
-
-    let lsfUrl='';
-    if(pendingLsfFile){
-      btn.textContent='⏳ Upload LSF...';
-      const fd2=new FormData();
-      fd2.append('file',pendingLsfFile);
-      fd2.append('upload_preset','ml_default');
-      fd2.append('cloud_name','dhtkpqkm9');
-      const r2=await fetch('https://api.cloudinary.com/v1_1/dhtkpqkm9/video/upload',{method:'POST',body:fd2});
-      const d2=await r2.json();
-      lsfUrl=d2.secure_url||'';
-    }
-    await db.collection('videos').add({
-      title, subj, url, lsfUrl,
-      author: user.n||'Anonyme',
-      classe: user.c||'',
-      initials: (user.n||'?').charAt(0).toUpperCase(),
-      likes: 0, comments: 0,
-      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    const c = document.getElementById('ecoMsgs');
+    if (c) c.innerHTML = '';
+    
+    ecoConv.forEach(msg => {
+      ksAddMsg(msg.content, msg.role === 'user' ? 'user' : 'ai');
     });
-    closeM('m-video');
-    toast(lsfUrl?'🎉 Vidéo + LSF publiées !':'🎉 Vidéo publiée ! Tout le monde peut la voir !');
-    pendingVidFile=null;pendingVidUrl=null;pendingLsfFile=null;pendingLsfUrl=null;
-    document.getElementById('previewPlayer').src='';
-    document.getElementById('vidPreview').style.display='none';
-    document.getElementById('lsfUploadSection').style.display='block';
-    document.getElementById('lsfPreviewPlayer').src='';
-    document.getElementById('lsfPreviewPlayer').style.display='none';
-    document.getElementById('lsfZoneText').textContent='Ajouter une vidéo LSF';
-    document.getElementById('vidTitle').value='';
-    btn.textContent='📤 Publier dans KrakMinute';
-    btn.disabled=false;btn.style.opacity='.5';
-    goTo('krakminute');
-  }catch(e){
-    toast('Erreur upload : '+e.message,'err');
-    btn.textContent='📤 Publier dans KrakMinute';btn.disabled=false;btn.style.opacity='1';
+    
+    const w = document.getElementById('ksWelcome');
+    if (w) w.style.display = 'none';
+    
+    // Ferme le menu latéral sur mobile après sélection
+    toggleKrakiSidebar(); 
   }
 }
 
-// ═══════════ CAM ANIM & ENTER KEYS ═══════════
-const CAMS=document.querySelectorAll('.cc.on');
-setInterval(()=>{CAMS.forEach(c=>c.classList.remove('talk'));const r=CAMS[Math.floor(Math.random()*CAMS.length)];if(r)r.classList.add('talk');},2200);
+// 3. Supprime une conversation
+function deleteKrakiConversation(idx) {
+  if (!confirm('Supprimer cette conversation ?')) return;
+  const convs = JSON.parse(localStorage.getItem('krakiConversations') || '[]');
+  
+  // Si on supprime la conversation actuellement affichée, on nettoie l'écran
+  if (convs[idx].id === currentKrakiConvId) {
+    newKsearchChat();
+  }
+  
+  convs.splice(idx, 1);
+  localStorage.setItem('krakiConversations', JSON.stringify(convs));
+  renderKrakiConversations();
+  toast('🗑️ Conversation supprimée');
+}
 
+// Fonction pour déclencher une question rapide depuis l'accueil KRAKI
+function ksQuick(q) {
+  const input = document.getElementById('ecoAiIn');
+  if (input) {
+    input.value = q;
+    sendEcoAI(); // Appelle la fonction d'envoi que nous avons configurée
+  }
+}
+
+// Fonction pour démarrer une toute nouvelle conversation
+function newKsearchChat() {
+  // 1. On réinitialise la mémoire de KRAKI
+  ecoConv = [];
+  currentKrakiConvId = null;
+
+  // 2. On cible le conteneur principal des messages
+  const c = document.getElementById('ecoMsgs');
+  if (c) {
+    // On le vide ET on y recrée directement l'écran d'accueil complet
+    c.innerHTML = `
+      <div id="ksWelcome" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; padding-top: 6vh; padding-bottom: 2rem;">
+        <div style="font-size: 3.5rem; color: #35afeb; background: #eafcf9; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 30px; margin: 0 auto 20px auto; font-family: sans-serif; font-weight: 300;">K</div>
+        <h2 style="font-weight: 400; font-size: 1.6rem; margin-bottom: 10px; text-align: center;">Comment puis-je t'aider aujourd'hui ?</h2>
+        <p style="color: #999; font-size: 0.95rem; margin-bottom: 30px; text-align: center;">Pose-moi une question de cours, demande une explication, ou fais corriger un exercice 📚</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 600px; margin: 0 auto;">
+          <button onclick="ksQuick('Explique-moi les nombres complexes')" style="padding: 16px 20px; border: 1px solid #eaeaea; border-radius: 12px; background: #fbfbfb; text-align: left; cursor: pointer; color: #333; font-size: 0.95rem; transition: 0.2s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fbfbfb'">🧮 Les nombres complexes</button>
+          <button onclick="ksQuick('Explique-moi la photosynthèse')" style="padding: 16px 20px; border: 1px solid #eaeaea; border-radius: 12px; background: #fbfbfb; text-align: left; cursor: pointer; color: #333; font-size: 0.95rem; transition: 0.2s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fbfbfb'">🌱 La photosynthèse</button>
+          <button onclick="ksQuick('Aide-moi pour une dissertation de philosophie')" style="padding: 16px 20px; border: 1px solid #eaeaea; border-radius: 12px; background: #fbfbfb; text-align: left; cursor: pointer; color: #333; font-size: 0.95rem; transition: 0.2s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fbfbfb'">✍️ Dissertation de philo</button>
+          <button onclick="ksQuick('Explique-moi le théorème de Pythagore')" style="padding: 16px 20px; border: 1px solid #eaeaea; border-radius: 12px; background: #fbfbfb; text-align: left; cursor: pointer; color: #333; font-size: 0.95rem; transition: 0.2s;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fbfbfb'">📐 Théorème de Pythagore</button>
+        </div>
+      </div>
+    `;
+  }
+
+  // 3. Replier la barre latérale sur mobile si besoin
+  const pageEcosearch = document.getElementById('page-ecosearch');
+  if (pageEcosearch && window.innerWidth <= 768) {
+    pageEcosearch.classList.remove('sidebar-open');
+  }
+}
+
+// ── ENVOI TEXTE VERS RENDER ──
+async function sendEcoAI(){
+  const inp = document.getElementById('ecoAiIn');
+  const q = inp.value.trim();
+  if(!q) return;
+  inp.value = '';
+
+  const w = document.getElementById('ksWelcome');
+  if(w) w.style.display = 'none';
+
+  ksAddMsg(q, 'user');
+  ksAddMsg('<div class="ldots"><span></span><span></span><span></span></div>', 'ai', 'ksLoad');
+  
+  ecoConv.push({role: 'user', content: q});
+  saveKrakiHistory();
+
+  try {
+    if(!currentKrakiConvId) currentKrakiConvId = 'c' + Date.now();
+    
+    // Appel à ton API Python sécurisée
+    const response = await fetch(`${RENDER_BACKEND_URL}/api/explain`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        channel_id: currentKrakiConvId,
+        concept: q
+      })
+    });
+
+    if(!response.ok) throw new Error("Erreur serveur Render");
+    
+    const data = await response.json();
+    const rep = data.reply || data.response || "Je n'ai pas de réponse.";
+
+    ecoConv.push({role: 'assistant', content: rep});
+    saveKrakiHistory();
+    autosaveKrakiConv();
+
+    ksRmLoading('ksLoad');
+    ksAddMsg(beautifyKrakiResponse(rep), 'ai', '', true);
+  } catch(e) {
+    console.error(e);
+    ksRmLoading('ksLoad');
+    ksAddMsg('Désolé, le serveur KRAKI est injoignable. Vérifie Render. 📡', 'ai');
+  }
+}
+
+// ── ENVOI IMAGE VERS RENDER (VISION) ──
+async function ksAnalyzePhoto(input) {
+  const file = input.files[0];
+  if(!file) return;
+  
+  const w = document.getElementById('ksWelcome');
+  if(w) w.style.display = 'none';
+
+  const reader = new FileReader();
+  reader.onload = async function(e) {
+    const dataUrl = e.target.result;
+    const base64 = dataUrl.split(',')[1];
+    const mime = file.type || 'image/jpeg';
+
+    const msgs = document.getElementById('ecoMsgs');
+    const userDiv = document.createElement('div');
+    userDiv.className = 'ks-msg-user';
+    userDiv.innerHTML = `<img src="${dataUrl}" style="max-width:200px;border-radius:10px;display:block">`;
+    msgs.appendChild(userDiv);
+    msgs.scrollTop = 99999;
+
+    ksAddMsg('<div class="ldots"><span></span><span></span><span></span></div>', 'ai', 'ksPhotoLoad');
+
+    try {
+      if(!currentKrakiConvId) currentKrakiConvId = 'c' + Date.now();
+
+      // Appel à l'API Vision de ton backend Python
+      const response = await fetch(`${RENDER_BACKEND_URL}/api/upload`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          channel_id: currentKrakiConvId,
+          image: base64,
+          mime_type: mime
+        })
+      });
+
+      if(!response.ok) throw new Error("Erreur serveur Vision Render");
+      
+      const data = await response.json();
+      const answer = data.reply || data.response;
+
+      ksRmLoading('ksPhotoLoad');
+
+      if(answer) {
+        ecoConv.push({role: 'user', content: '[Image envoyée]'});
+        ecoConv.push({role: 'assistant', content: answer});
+        saveKrakiHistory();
+        autosaveKrakiConv();
+        ksAddMsg(beautifyKrakiResponse(answer), 'ai');
+      }
+    } catch(ex) {
+      console.error(ex);
+      ksRmLoading('ksPhotoLoad');
+      ksAddMsg('📸 Oups, la transmission de l\'image vers le serveur a échoué. 📡', 'ai');
+    }
+  };
+  reader.readAsDataURL(file);
+}
+
+// ── UTILITAIRES D'INTERFACE KRAKI ──
+function ksRmLoading(id){ const e=document.getElementById(id); if(e)e.remove(); }
+
+// 1. On injecte un petit style CSS pour faire clignoter le curseur 
+if (!document.getElementById('kraki-typing-style')) {
+  const style = document.createElement('style');
+  style.id = 'kraki-typing-style';
+  style.innerHTML = `
+    .typing-cursor {
+      display: inline-block;
+      font-weight: bold;
+      color: #35afeb;
+      margin-left: 2px;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+  `;
+  document.head.appendChild(style);
+}
+
+// 2. La nouvelle fonction d'affichage avec l'effet Machine à écrire
+function ksAddMsg(text, type, id='', animate=false) {
+  const c = document.getElementById('ecoMsgs');
+  const div = document.createElement('div');
+  
+  if(type === 'user'){
+    div.className = 'ks-msg-user';
+    div.innerHTML = text; 
+    if(id) div.id = id;
+    c.appendChild(div);
+    c.scrollTop = c.scrollHeight;
+  } else {
+    div.className = 'ks-msg-ai';
+    
+    // Préparation du texte et du LaTeX
+    let formattedText = text.replace(/\$\$\$([^]*?)\$\$\$/g, '\\[$1\\]')
+                            .replace(/\$\$([^]*?)\$\$/g, '\\[$1\\]')
+                            .replace(/\$([^$]*?)rac\{/g, '$\\frac{')
+                            .replace(/rac\{/g, '\\frac{')
+                            .replace(/times/g, '\\times');
+
+    const cleanText = text.replace(/<[^>]*>/g, '');
+
+    div.innerHTML = `
+      <div class="ks-ai-avatar"><span style="font-size:1.2rem">🤖</span></div>
+      <div class="ks-ai-content" style="flex:1; min-width:0;">
+        <div class="ks-ai-bubble"></div>
+        <div class="ks-msg-actions" style="margin-top:12px;display:none;gap:6px;flex-wrap:wrap;font-size:.75rem">
+          <button onclick="copyKrakiText(this)" style="background:rgba(53,175,235,0.1);border:none;color:#35afeb;cursor:pointer;font-weight:700;padding:4px 8px;border-radius:6px;transition:.2s">📋 Copier</button>
+          <button onclick="showDetailedStepsUI()" style="background:rgba(53,175,235,0.1);border:none;color:#35afeb;cursor:pointer;font-weight:700;padding:4px 8px;border-radius:6px;transition:.2s">📝 Étapes</button>
+          <button onclick="showQuizUI()" style="background:rgba(53,175,235,0.1);border:none;color:#35afeb;cursor:pointer;font-weight:700;padding:4px 8px;border-radius:6px;transition:.2s">❓ Quiz</button>
+          <button onclick="showVerifyUI()" style="background:rgba(53,175,235,0.1);border:none;color:#35afeb;cursor:pointer;font-weight:700;padding:4px 8px;border-radius:6px;transition:.2s">✅ Vérifier</button>
+          <button onclick="showSaveUI()" style="background:rgba(53,175,235,0.1);border:none;color:#35afeb;cursor:pointer;font-weight:700;padding:4px 8px;border-radius:6px;transition:.2s">💾 Sauvegarder</button>
+          <button onclick="krakiQuickGraph()" style="background:rgba(53,175,235,0.1);border:none;color:#35afeb;cursor:pointer;font-weight:700;padding:4px 8px;border-radius:6px;transition:.2s">📊 Graphique</button>
+        </div>
+      </div>`;
+    
+    if(id) div.id = id;
+    c.appendChild(div);
+    
+    const bubble = div.querySelector('.ks-ai-bubble');
+    const actions = div.querySelector('.ks-msg-actions');
+
+    // Fonction pour activer les mathématiques (KaTeX)
+    const renderMath = () => {
+      if(window.renderMathInElement) {
+        try {
+          renderMathInElement(bubble, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '\\[', right: '\\]', display: true},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '$', right: '$', display: false}
+            ], throwOnError: false
+          });
+        } catch(e) {}
+      }
+    };
+
+    // 🔴 LA MAGIE DU STREAMING SE PASSE ICI 🔴
+    if (animate) {
+      let i = 0;
+      bubble.innerHTML = '<span class="typing-cursor">|</span>'; // Curseur initial
+      
+      const typeInterval = setInterval(() => {
+        if (i < formattedText.length) {
+          let char = formattedText.charAt(i);
+          
+          // Sécurité : On affiche les balises HTML d'un seul coup pour ne pas casser le design
+          if (char === '<') {
+            let tagEnd = formattedText.indexOf('>', i);
+            if (tagEnd !== -1) {
+              char = formattedText.substring(i, tagEnd + 1);
+              i = tagEnd;
+            }
+          }
+          
+          // On insère le texte juste avant le curseur clignotant
+          bubble.innerHTML = bubble.innerHTML.replace('<span class="typing-cursor">|</span>', char + '<span class="typing-cursor">|</span>');
+          i++;
+          
+          // Fait défiler l'écran automatiquement vers le bas
+          c.scrollTop = c.scrollHeight;
+        } else {
+          // Fin de la frappe
+          clearInterval(typeInterval);
+          bubble.innerHTML = bubble.innerHTML.replace('<span class="typing-cursor">|</span>', ''); // Retire le curseur
+          actions.style.display = 'flex'; // Fait apparaître les boutons d'action
+          renderMath(); // Transforme les équations en belles formules mathématiques
+        }
+      }, 10); // Vitesse : 10 millisecondes par lettre (rapide et fluide)
+      
+    } else {
+      // Affichage instantané (utilisé quand on recharge l'historique)
+      bubble.innerHTML = formattedText;
+      actions.style.display = 'flex';
+      setTimeout(renderMath, 50);
+      c.scrollTop = c.scrollHeight;
+    }
+  }
+}
+
+function beautifyKrakiResponse(text) {
+  text = text.replace(/(\*\*[🎯🧠📐✍️✅🎁][^\*]*\*\*)/g, '\n$1\n');
+  text = text.replace(/EXERCICE:/g, '📝 **EXERCICE:**');
+  text = text.replace(/INDICES:/g, '💡 **INDICES:**');
+  text = text.replace(/RÉPONSE:/g, '✅ **RÉPONSE:**');
+  text = text.replace(/SOLUTION:/g, '✨ **SOLUTION:**');
+  text = text.replace(/(\n[•\-])/g, '\n$1');
+  return text;
+}
+
+// ═══════════ INITIALISATION & ICÔNES ═══════════
 document.addEventListener('DOMContentLoaded',()=>{
+  // 1. Charge les icônes de l'équipe KRAK
   const setIco=(id,name)=>{const el=document.getElementById(id);if(el)el.src=ICONS[name];};
-  setIco('ic-home','home'); setIco('ic-squads','squads'); setIco('ic-krakmin','krakmin'); setIco('ic-search','search');
-  setIco('ic-devoirs','devoirs'); setIco('ic-prof1','profileline'); setIco('ic-bell1','bell'); setIco('ic-lock1','lockoutline');
-  setIco('ic-logologin','krak'); setIco('ic-logotop','krak'); setIco('ic-upload','download'); setIco('ic-uploadzone','download');
-  setIco('ic-devoircard','devoirs'); setIco('ic-modsquad','squads'); setIco('ic-modkrak','krakmin'); setIco('ic-modeco','search');
-  setIco('ic-ksearchlogo','krak'); setIco('ic-ksearchbig','krakmin'); setIco('ic-bellhome','bellnav'); setIco('ic-squadspage','squads');
+  setIco('ic-home','home');
+  setIco('ic-squads','squads');
+  setIco('ic-krakmin','krakmin');
+  setIco('ic-search','search');
+  setIco('ic-devoirs','devoirs');
+  setIco('ic-prof1','profileline');
+  setIco('ic-bell1','bell');
+  setIco('ic-lock1','lockoutline');
+  setIco('ic-logologin','krak');
+  setIco('ic-logotop','krak');
+  setIco('ic-upload','download');
+  setIco('ic-uploadzone','download');
+  setIco('ic-devoircard','devoirs');
+  setIco('ic-modsquad','squads');
+  setIco('ic-modkrak','krakmin');
+  setIco('ic-modeco','search');
+  setIco('ic-ksearchlogo','krak');
+  setIco('ic-ksearchbig','krakmin');
+  setIco('ic-bellhome','bellnav');
+  setIco('ic-squadspage','squads');
   setIco('ic-editbtn','edit');
-  document.getElementById('ecoAiIn').addEventListener('keypress',e=>{if(e.key==='Enter')sendEcoAI();});
-  document.getElementById('lCode').addEventListener('keypress',e=>{if(e.key==='Enter')doLogin();});
+
+  // 2. Écouteurs pour la touche "Entrée"
+  const inpEco = document.getElementById('ecoAiIn');
+  if (inpEco) inpEco.addEventListener('keypress',e=>{if(e.key==='Enter')sendEcoAI();});
+  
+  const inpLogin = document.getElementById('lCode');
+  if (inpLogin) inpLogin.addEventListener('keypress',e=>{if(e.key==='Enter')doLogin();});
+
+  const pageEcosearch = document.getElementById('page-ecosearch');
+  if (pageEcosearch && window.innerWidth > 768) {
+    pageEcosearch.classList.add('sidebar-collapsed');
+  }
+
+  // 3. Init
+  loadNotifications();
 });
 
-// ═══════════ LSF ═══════════
-let lsfActive = false;
-let lsfDefaultSrc = '';   
-let currentLsfUrl = '';   
-let lsfLoadedUrl = null;  
+// ═══════════════════════════════════════════════════════════════════════════════
+// 🎯 KRAKI SUPERPOWERS - ACTIONS SOUS LES MESSAGES
+// ═══════════════════════════════════════════════════════════════════════════════
 
-function applyLsfSource(){
-  const v = document.getElementById('lsfVideo');
-  if(!v) return;
-  if(!lsfDefaultSrc) lsfDefaultSrc = v.getAttribute('src') || '';
-  const want = currentLsfUrl || '';        
-  if(lsfLoadedUrl === want) return;          
-  lsfLoadedUrl = want;
-  v.setAttribute('src', want || lsfDefaultSrc);
-  v.load();
-  if(lsfActive){ v.currentTime = 0; v.play().catch(()=>{}); }
+// 1. Bouton : Télécharger la réponse
+function downloadKrakiResponse(text) {
+  const blob = new Blob([text], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'KRAKI-' + new Date().getTime() + '.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('⬇️ Téléchargé !');
 }
 
-function lsfSyncVideo(mainIsPaused){
-  const v = document.getElementById('lsfVideo');
-  if(!v) return;
-  if(mainIsPaused){ v.pause(); }
-  else if(lsfActive){ v.play().catch(()=>{}); }
-}
-
-function toggleLSF(text){
-  lsfActive = !lsfActive;
-  const panel = document.getElementById('lsfPanel');
-  const btn = document.getElementById('lsfToggleBtn');
-  const vid = document.getElementById('lsfVideo');
-  if(lsfActive){
-    panel.style.display = 'flex';
-    btn.classList.add('on');
-    applyLsfSource();
-    if(vid){ vid.currentTime = 0; vid.play().catch(()=>{}); }
-    toast('🤟 Vidéo langue des signes activée !');
-  } else {
-    panel.style.display = 'none';
-    btn.classList.remove('on');
-    if(vid) vid.pause();
+// 2. Bouton : Menu déroulant (Plus/Moins)
+function toggleKrakiMore(btn) {
+  let moreDiv = btn.parentElement.nextElementSibling;
+  if (moreDiv && moreDiv.classList.contains('ks-msg-more')) {
+    if (moreDiv.style.display === 'none' || moreDiv.style.display === '') {
+      moreDiv.style.display = 'flex';
+      btn.textContent = '⋱ Moins';
+    } else {
+      moreDiv.style.display = 'none';
+      btn.textContent = '⋮ Plus';
+    }
   }
 }
-function lsfOnVideoVisible(text){}
+
+// 3. Bouton : Demander les étapes détaillées (via ton backend)
+function showDetailedStepsUI() {
+  let problem = prompt('Quel est le problème à détailler ?');
+  if (!problem) return;
+  const input = document.getElementById('ecoAiIn');
+  if (input) {
+    input.value = "Montre-moi les étapes ultra détaillées pas à pas pour résoudre : " + problem;
+    sendEcoAI();
+  }
+}
+
+// 4. Bouton : Générer un Quiz (via ton backend)
+function showQuizUI() {
+  let topic = prompt('Sur quel sujet veux-tu un exercice ? (ex: Pythagore, ADN...)');
+  if (!topic) return;
+  let difficulty = prompt('Difficulté ? (facile / moyen / difficile)') || 'moyen';
+  const input = document.getElementById('ecoAiIn');
+  if (input) {
+    input.value = `Génère-moi un exercice de niveau ${difficulty} sur : ${topic}. Donne l'énoncé, des indices, puis la réponse à la fin.`;
+    sendEcoAI();
+  }
+}
+
+// 5. Bouton : Vérifier une réponse mathématique
+function showVerifyUI() {
+  let userAns = prompt('Quelle est ta réponse ?');
+  if (!userAns) return;
+  let correctAns = prompt('Quelle est la réponse attendue ?');
+  if (!correctAns) return;
+  
+  try {
+    let ua = String(userAns).trim().toLowerCase().replace(/,/g, '.');
+    let ca = String(correctAns).trim().toLowerCase().replace(/,/g, '.');
+    if (ua === ca) {
+      toast("✅ EXACT ! Bravo !");
+      ksAddMsg(`🔍 Vérification : Ta réponse (${userAns}) correspond exactement ! ✅`, 'ai');
+    } else {
+      toast("❌ Ce n'est pas tout à fait ça.");
+      ksAddMsg(`🔍 Vérification : Ta réponse (${userAns}) est différente de la correction (${correctAns}). ❌`, 'ai');
+    }
+  } catch(e) {
+    toast("Erreur de vérification", "err");
+  }
+}
+
+// 6. Bouton : Sauvegarder dans l'historique de révision
+function showSaveUI() {
+  let problem = prompt('Titre pour sauvegarder cette solution ?');
+  if (!problem) return;
+  let tags = prompt('Tags (ex: maths, physique) ?') || 'général';
+  
+  let saved = JSON.parse(localStorage.getItem('krakiSaved') || '[]');
+  let lastMsg = document.querySelector('#ecoMsgs .ks-msg-ai:last-child')?.textContent || problem;
+  
+  saved.push({
+    id: 'krak-' + Date.now(),
+    problem: problem,
+    solution: lastMsg,
+    tags: tags.split(',').map(t => t.trim()),
+    date: new Date().toLocaleString()
+  });
+  
+  localStorage.setItem('krakiSaved', JSON.stringify(saved));
+  toast(`✅ Sauvegardé ! (${saved.length} notes)`);
+}
+
+// 7. Bouton : Tracer un graphique mathématique (Canvas)
+function krakiQuickGraph() {
+  let expr = prompt('📊 Quelle courbe veux-tu tracer ?\n\nExemples: 2x | x^2 | Math.sin(x) | 1/x\n\nTape l\'équation :');
+  if (!expr) return;
+  expr = expr.trim();
+  
+  // Rendre l'expression compréhensible par le JS (x^2 devient x**2, 2x devient 2*x)
+  expr = expr.replace(/(\d)([a-z])/gi, '$1*$2')
+             .replace(/\)([a-z0-9])/gi, ')*$1')
+             .replace(/(\))(\()/g, '$1*$2')
+             .replace(/\^/g, '**');
+
+  ksAddMsg(`Trace-moi la courbe : ${expr}`, 'user');
+  let result = krakiPlotGraph(expr, -10, 10);
+  toast(result);
+}
+
+function krakiPlotGraph(expr, xMin = -10, xMax = 10) {
+  try {
+    var c = document.createElement('canvas');
+    c.width = 650;
+    c.height = 400;
+    c.style.borderRadius = '8px';
+    c.style.marginTop = '12px';
+    c.style.border = '1px solid #ddd';
+    c.style.backgroundColor = '#fff';
+    c.style.maxWidth = '100%';
+    
+    var ctx = c.getContext('2d');
+    var W = 650, H = 400, pad = 50;
+    var plotW = W - 2*pad, plotH = H - 2*pad;
+    
+    // Grille
+    ctx.strokeStyle = '#e0e0e0'; ctx.lineWidth = 1; ctx.fillStyle = '#888';
+    ctx.font = '11px Arial'; ctx.textAlign = 'center';
+    
+    for (let i = 0; i <= 10; i++) {
+      let x = pad + (i/10)*plotW;
+      let xVal = Math.round(xMin + (i/10)*(xMax-xMin));
+      ctx.beginPath(); ctx.moveTo(x, pad); ctx.lineTo(x, H-pad); ctx.stroke();
+      ctx.fillText(xVal, x, H-pad+20);
+    }
+    ctx.textAlign = 'right';
+    for (let i = 0; i <= 10; i++) {
+      let y = pad + (i/10)*plotH;
+      let yVal = Math.round(10 - i*2);
+      ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W-pad, y); ctx.stroke();
+      ctx.fillText(yVal, pad-10, y+4);
+    }
+    
+    // Axes centraux
+    ctx.strokeStyle = '#333'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(pad, H-pad); ctx.lineTo(W-pad, H-pad); ctx.stroke(); // X
+    ctx.beginPath(); ctx.moveTo(pad, pad); ctx.lineTo(pad, H-pad); ctx.stroke(); // Y
+    
+    // Calcul de la courbe
+    let points = [];
+    for (let step = 0; step <= 300; step++) {
+      let x = xMin + (step/300)*(xMax-xMin);
+      try {
+        let safeExpr = expr.replace(/x/g, `(${x})`);
+        let y = eval(safeExpr);
+        if (typeof y === 'number' && isFinite(y) && Math.abs(y) < 100) {
+          points.push({x: x, y: y});
+        }
+      } catch(e) {}
+    }
+    
+    if (points.length < 2) return "❌ Équation invalide (utilise le format JS)";
+    
+    // Tracé de la ligne
+    ctx.strokeStyle = '#35afeb';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    for (let i = 0; i < points.length; i++) {
+      let px = pad + ((points[i].x - xMin)/(xMax - xMin)) * plotW;
+      let py = H - pad - ((points[i].y + 10)/20) * plotH;
+      if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+    }
+    ctx.stroke();
+    
+    // Injection du Canvas dans la dernière bulle du chat
+    let bubbles = document.querySelectorAll('#ecoMsgs .ks-ai-bubble');
+    let lastBubble = bubbles[bubbles.length - 1];
+    if (lastBubble) lastBubble.appendChild(c);
+    
+    return "✅ Graphique tracé !";
+  } catch(e) {
+    return "❌ Erreur de tracé";
+  }
+}
+
+// 8. Bouton : Copier le texte intelligemment
+function copyKrakiText(btnElement) {
+  // Remonte l'arbre HTML pour trouver la bulle de contenu associée à ce bouton
+  const contentDiv = btnElement.closest('.ks-ai-content');
+  if (!contentDiv) return;
+  
+  const bubble = contentDiv.querySelector('.ks-ai-bubble');
+  if (!bubble) return;
+  
+  // Récupère le texte propre (sans les balises HTML mais en gardant la mise en forme)
+  const textToCopy = bubble.innerText || bubble.textContent;
+  
+  // Utilise l'API moderne du presse-papier
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    toast('📋 Copié !');
+  }).catch(err => {
+    console.error('Erreur lors de la copie :', err);
+    toast('❌ Impossible de copier', 'err');
+  });
+}
