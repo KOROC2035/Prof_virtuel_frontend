@@ -567,7 +567,7 @@ function loadDevoirs(){
 // 🧠 KRAKI CORE V3 - INTÉGRATION SÉCURISÉE RENDER (Prof Virtuel)
 // ═══════════════════════════════════════════════════════════════════════════════
 
-const RENDER_BACKEND_URL = "http://127.0.0.1:8000"; 
+const RENDER_BACKEND_URL = "https://prof-virtuel-backend.onrender.com"; 
 
 let ecoConv = [];
 let currentKrakiConvId = null;
