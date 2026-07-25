@@ -1540,7 +1540,7 @@ let krakiCourseDoc=null; // {mime, base64, name, text}
 async function askVirtualTeacher(concept, channelId, fileData = null) {
     let fileUrl = null;
     let fileType = null;
-    const API_BASE_URL = "http://localhost:8000/api";
+    const API_BASE_URL = "https://prof-virtuel-backend.onrender.com/api";
 
     // 1. 🔐 RÉCUPÉRATION DU TOKEN FIREBASE DE L'ÉLÈVE
     let token = "";
@@ -3254,7 +3254,7 @@ function previewLsf(input){
 // 🛑 LE VIGILE IA
 async function isContentEducational(title, subject) {
   try {
-    const response = await fetch('http://localhost:8000/api/moderate', {
+    const response = await fetch('https://prof-virtuel-backend.onrender.com/api/moderate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
